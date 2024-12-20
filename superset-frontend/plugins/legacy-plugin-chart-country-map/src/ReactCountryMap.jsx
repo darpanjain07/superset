@@ -58,13 +58,13 @@ export default styled(CountryMap)`
     }
 
     .superset-legacy-chart-country-map text.result-text {
-      font-weight: ${theme.typography.weights.light};
-      font-size: ${theme.typography.sizes.xl}px;
+      font-weight: ${theme.fontWeightLight};
+      font-size: ${theme.fontSizeXL}px;
     }
 
     .superset-legacy-chart-country-map text.big-text {
-      font-weight: ${theme.typography.weights.bold};
-      font-size: ${theme.typography.sizes.l}px;
+      font-weight: ${theme.fontWeightStrong};
+      font-size: ${theme.fontSizeLG}px;
     }
 
     .superset-legacy-chart-country-map path.region {

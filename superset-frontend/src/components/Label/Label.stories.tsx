@@ -30,11 +30,10 @@ export default {
 // Explicitly type the options array as an array of `Type`
 export const options: Type[] = [
   'default',
-  'alert',
   'info',
   'success',
   'warning',
-  'danger',
+  'error',
   'primary',
   'secondary',
 ];

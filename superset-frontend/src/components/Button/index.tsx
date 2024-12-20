@@ -91,7 +91,13 @@ export default function Button(props: ButtonProps) {
   } = props;
 
   const theme = useTheme();
-  const { colors, transitionTiming, borderRadius, typography } = theme;
+  const {
+    colors,
+    transitionTiming,
+    borderRadius,
+    fontSizeSM,
+    fontWeightStrong,
+  } = theme;
   const { primary, grayscale, success, warning } = colors;
 
   let height = 32;
@@ -112,7 +118,7 @@ export default function Button(props: ButtonProps) {
   let colorHover;
   let borderWidth = 0;
   let borderStyle = 'none';
-  let borderColor;
+  let borderColor = grayscale.border;
   let borderColorHover;
   let borderColorDisabled = 'transparent';
 
@@ -123,8 +129,8 @@ export default function Button(props: ButtonProps) {
     backgroundColorDisabled = grayscale.light5;
     borderWidth = 1;
     borderStyle = buttonStyle === 'dashed' ? 'dashed' : 'solid';
-    borderColor = primary.dark1;
-    borderColorHover = primary.light1;
+    borderColor = primary.border;
+    borderColorHover = primary.borderHover;
     borderColorDisabled = grayscale.light2;
   } else if (buttonStyle === 'danger') {
     colorHover = color;
@@ -156,7 +162,7 @@ export default function Button(props: ButtonProps) {
     renderedChildren = Children.toArray(children);
   }
   const firstChildMargin =
-    showMarginRight && renderedChildren.length > 1 ? theme.gridUnit * 2 : 0;
+    showMarginRight && renderedChildren.length > 1 ? theme.sizeUnit * 2 : 0;
 
   const effectiveButtonStyle: ButtonStyle = buttonStyle ?? 'default';
 
@@ -179,13 +185,13 @@ export default function Button(props: ButtonProps) {
         alignItems: 'center',
         justifyContent: 'center',
         lineHeight: 1.5715,
-        fontSize: typography.sizes.s,
-        fontWeight: typography.weights.bold,
+        fontSize: fontSizeSM,
+        fontWeight: fontWeightStrong,
         height,
         padding: `0px ${padding}px`,
         transition: `all ${transitionTiming}s`,
-        minWidth: cta ? theme.gridUnit * 36 : undefined,
-        minHeight: cta ? theme.gridUnit * 8 : undefined,
+        minWidth: cta ? theme.sizeUnit * 36 : undefined,
+        minHeight: cta ? theme.sizeUnit * 8 : undefined,
         boxShadow: 'none',
         borderWidth,
         borderStyle,
@@ -223,7 +229,7 @@ export default function Button(props: ButtonProps) {
         },
         marginLeft: 0,
         '& + .superset-button': {
-          marginLeft: theme.gridUnit * 2,
+          marginLeft: theme.sizeUnit * 2,
         },
         '& > span > :first-of-type': {
           marginRight: firstChildMargin,
@@ -245,7 +251,7 @@ export default function Button(props: ButtonProps) {
             css={{
               cursor: 'not-allowed',
               '& > .superset-button': {
-                marginLeft: theme.gridUnit * 2,
+                marginLeft: theme.sizeUnit * 2,
               },
             }}
           >

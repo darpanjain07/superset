@@ -47,10 +47,10 @@ const NumbersContainer = styled.div`
 
 const ComparisonValue = styled.div<PopKPIComparisonValueStyleProps>`
   ${({ theme, subheaderFontSize }) => `
-    font-weight: ${theme.typography.weights.light};
+    font-weight: ${theme.fontWeightLight};
     display: flex;
     justify-content: center;
-    font-size: ${subheaderFontSize || 20}px;
+    font-size: ${String(subheaderFontSize) || 20}px;
     flex: 1 1 0px;
   `}
 `;
@@ -59,9 +59,9 @@ const SymbolWrapper = styled.span<PopKPIComparisonSymbolStyleProps>`
   ${({ theme, backgroundColor, textColor }) => `
     background-color: ${backgroundColor};
     color: ${textColor};
-    padding: ${theme.gridUnit}px ${theme.gridUnit * 2}px;
-    border-radius: ${theme.gridUnit * 2}px;
-    margin-right: ${theme.gridUnit}px;
+    padding: ${theme.sizeUnit}px ${theme.sizeUnit * 2}px;
+    border-radius: ${theme.sizeUnit * 2}px;
+    margin-right: ${theme.sizeUnit}px;
   `}
 `;
 
@@ -122,9 +122,9 @@ export default function PopKPI(props: PopKPIProps) {
   }, [currentTimeRangeFilter, shift, startDateOffset, dashboardTimeRange]);
 
   const theme = useTheme();
-  const flexGap = theme.gridUnit * 5;
+  const flexGap = theme.sizeUnit * 5;
   const wrapperDivStyles = css`
-    font-family: ${theme.typography.families.sansSerif};
+    font-family: ${theme.fontFamily};
     display: flex;
     justify-content: center;
     align-items: center;
@@ -134,10 +134,10 @@ export default function PopKPI(props: PopKPIProps) {
   `;
 
   const bigValueContainerStyles = css`
-    font-size: ${headerFontSize || 60}px;
-    font-weight: ${theme.typography.weights.normal};
+    font-size: ${String(headerFontSize) || 60}px;
+    font-weight: ${theme.fontWeightNormal};
     text-align: center;
-    margin-bottom: ${theme.gridUnit * 4}px;
+    margin-bottom: ${theme.sizeUnit * 4}px;
   `;
 
   const getArrowIndicatorColor = () => {
@@ -159,10 +159,10 @@ export default function PopKPI(props: PopKPIProps) {
 
   const arrowIndicatorStyle = css`
     color: ${getArrowIndicatorColor()};
-    margin-left: ${theme.gridUnit}px;
+    margin-left: ${theme.sizeUnit}px;
   `;
 
-  const defaultBackgroundColor = theme.colors.grayscale.light4;
+  const defaultBackgroundColor = theme.colors.grayscale.bg;
   const defaultTextColor = theme.colors.grayscale.base;
   const { backgroundColor, textColor } = useMemo(() => {
     let bgColor = defaultBackgroundColor;

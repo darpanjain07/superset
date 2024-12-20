@@ -78,11 +78,10 @@ const defaultProps = {
 
 const StyledTabsContainer = styled.div`
   width: 100%;
-  background-color: ${({ theme }) => theme.colors.grayscale.light5};
 
   .dashboard-component-tabs-content {
-    min-height: ${({ theme }) => theme.gridUnit * 12}px;
-    margin-top: ${({ theme }) => theme.gridUnit / 4}px;
+    min-height: ${({ theme }) => theme.sizeUnit * 12}px;
+    margin-top: ${({ theme }) => theme.sizeUnit / 4}px;
     position: relative;
   }
 
@@ -90,7 +89,8 @@ const StyledTabsContainer = styled.div`
     overflow: visible;
 
     .ant-tabs-nav-wrap {
-      min-height: ${({ theme }) => theme.gridUnit * 12.5}px;
+      min-height: ${({ theme }) => theme.sizeUnit * 12.5}px;
+      background-color: ${({ theme }) => theme.colorBgBase};
     }
 
     .ant-tabs-content-holder {

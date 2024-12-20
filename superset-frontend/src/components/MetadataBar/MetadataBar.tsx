@@ -41,9 +41,9 @@ const Bar = styled.div<{ count: number }>`
     display: flex;
     align-items: center;
     padding: ${VERTICAL_PADDING}px ${HORIZONTAL_PADDING}px;
-    background-color: ${theme.colors.grayscale.light4};
-    color: ${theme.colors.grayscale.base};
-    font-size: ${theme.typography.sizes.s}px;
+    background-color: ${theme.colorBgElevated};
+    color: ${theme.colorTextTertiary};
+    font-size: ${theme.fontSizeSM}px;
     min-width: ${
       HORIZONTAL_PADDING * 2 +
       (ICON_WIDTH + SPACE_BETWEEN_ITEMS) * count -

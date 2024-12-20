@@ -51,7 +51,7 @@ const StyledMenuItem = styled(AntdMenu.Item)`
       justify-content: space-between;
     }
     a {
-      transition: background-color ${({ theme }) => theme.transitionTiming}s;
+      transition: background-color ${({ theme }) => theme.motionDurationMid};
       &:after {
         content: '';
         position: absolute;
@@ -61,7 +61,7 @@ const StyledMenuItem = styled(AntdMenu.Item)`
         height: 3px;
         opacity: 0;
         transform: translateX(-50%);
-        transition: all ${({ theme }) => theme.transitionTiming}s;
+        transition: all ${({ theme }) => theme.motionDurationMid};
         background-color: ${({ theme }) => theme.colors.primary.base};
       }
       &:focus {
@@ -103,8 +103,8 @@ const StyledNav = styled(AntdMenu)`
     align-items: center;
     margin: 0;
     border-bottom: 2px solid transparent;
-    padding: ${({ theme }) => theme.gridUnit * 2}px
-      ${({ theme }) => theme.gridUnit * 4}px;
+    padding: ${({ theme }) => theme.sizeUnit * 2}px
+      ${({ theme }) => theme.sizeUnit * 4}px;
     &:hover {
       background-color: ${({ theme }) => theme.colors.primary.light5};
       border-bottom: 2px solid transparent;
@@ -142,7 +142,7 @@ const StyledSubMenu = styled(AntdMenu.SubMenu)`
       height: 3px;
       opacity: 0;
       transform: translateX(-50%);
-      transition: all ${({ theme }) => theme.transitionTiming}s;
+      transition: all ${({ theme }) => theme.motionDurationMid};
     }
   }
 

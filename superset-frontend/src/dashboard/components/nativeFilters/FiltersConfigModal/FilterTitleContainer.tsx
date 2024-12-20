@@ -27,14 +27,14 @@ export const FilterTitle = styled.div`
   ${({ theme }) => `
       display: flex;
       align-items: center;
-      padding: ${theme.gridUnit * 2}px;
+      padding: ${theme.sizeUnit * 2}px;
       width: 100%;
       border-radius: ${theme.borderRadius}px;
       cursor: pointer;
       &.active {
         color: ${theme.colors.grayscale.dark1};
         border-radius: ${theme.borderRadius}px;
-        background-color: ${theme.colors.secondary.light4};
+        background-color: ${theme.colors.primary.bg};
         span, .anticon {
           color: ${theme.colors.grayscale.dark1};
         }

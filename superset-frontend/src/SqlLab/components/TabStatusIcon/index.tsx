@@ -29,15 +29,15 @@ const IconContainer = styled.span`
 const Circle = styled.div`
   ${({ theme }) => css`
     border-radius: 50%;
-    width: ${theme.gridUnit * 3}px;
-    height: ${theme.gridUnit * 3}px;
+    width: ${theme.sizeUnit * 3}px;
+    height: ${theme.sizeUnit * 3}px;
 
     display: inline-block;
     background-color: ${theme.colors.grayscale.light2};
     text-align: center;
     vertical-align: middle;
-    font-size: ${theme.typography.sizes.m}px;
-    font-weight: ${theme.typography.weights.bold};
+    font-size: ${theme.fontSize}px;
+    font-weight: ${theme.fontWeightStrong};
     color: ${theme.colors.grayscale.light5};
     position: relative;
 

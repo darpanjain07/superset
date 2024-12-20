@@ -41,7 +41,7 @@ export default styled.div`
     }
     th svg {
       color: ${theme.colors.grayscale.light2};
-      margin: ${theme.gridUnit / 2}px;
+      margin: ${theme.sizeUnit / 2}px;
     }
     th.is-sorted svg {
       color: ${theme.colors.grayscale.base};
@@ -62,7 +62,7 @@ export default styled.div`
       text-align: right;
     }
     .dt-totals {
-      font-weight: ${theme.typography.weights.bold};
+      font-weight: ${theme.fontWeightStrong};
     }
     .dt-is-null {
       color: ${theme.colors.grayscale.light1};
@@ -71,11 +71,11 @@ export default styled.div`
       cursor: pointer;
     }
     td.dt-is-filter:hover {
-      background-color: ${theme.colors.secondary.light4};
+      background-color: ${theme.colors.primary.bgHover};
     }
     td.dt-is-active-filter,
     td.dt-is-active-filter:hover {
-      background-color: ${theme.colors.secondary.light3};
+      background-color: ${theme.colors.primary.bgHover};
     }
 
     .dt-global-filter {

@@ -76,14 +76,14 @@ const Styles = styled.div`
     justify-content: space-between;
     align-items: center;
     border-bottom: 1px solid ${({ theme }) => theme.colors.grayscale.light2};
-    padding: ${({ theme }) => 4 * theme.gridUnit}px;
-    padding-right: ${({ theme }) => 2 * theme.gridUnit}px;
+    padding: ${({ theme }) => 4 * theme.sizeUnit}px;
+    padding-right: ${({ theme }) => 2 * theme.sizeUnit}px;
   }
   .error-alert {
-    margin: ${({ theme }) => 2 * theme.gridUnit}px;
+    margin: ${({ theme }) => 2 * theme.sizeUnit}px;
   }
   .ant-dropdown-trigger {
-    margin-left: ${({ theme }) => 2 * theme.gridUnit}px;
+    margin-left: ${({ theme }) => 2 * theme.sizeUnit}px;
     box-shadow: none;
     &:active {
       box-shadow: none;
@@ -105,8 +105,7 @@ const Styles = styled.div`
   .title-select {
     flex: 1 1 100%;
     display: inline-block;
-    background-color: ${({ theme }) => theme.colors.grayscale.light3};
-    padding: ${({ theme }) => theme.gridUnit * 2}px;
+    padding: ${({ theme }) => theme.sizeUnit * 2}px;
     border-radius: ${({ theme }) => theme.borderRadius}px;
     text-align: center;
     text-overflow: ellipsis;
@@ -114,7 +113,7 @@ const Styles = styled.div`
     overflow: hidden;
   }
   .datasource-svg {
-    margin-right: ${({ theme }) => 2 * theme.gridUnit}px;
+    margin-right: ${({ theme }) => 2 * theme.sizeUnit}px;
     flex: none;
   }
   span[aria-label='dataset-physical'] {
@@ -429,10 +428,10 @@ class DatasourceControl extends PureComponent {
         {isMissingDatasource && isMissingParams && (
           <div className="error-alert">
             <ErrorAlert
-              level="warning"
-              title={t('Missing URL parameters')}
-              source="explore"
-              subtitle={
+              type="warning"
+              descriptionPre={false}
+              message={t('Missing URL parameters')}
+              description={
                 <>
                   <p>
                     {t(
@@ -447,10 +446,11 @@ class DatasourceControl extends PureComponent {
         {isMissingDatasource && !isMissingParams && (
           <div className="error-alert">
             <ErrorAlert
-              level="warning"
-              title={t('Missing dataset')}
-              source="explore"
-              subtitle={
+              type="warning"
+              errorType={t('Missing dataset')}
+              descriptionPre={false}
+              descriptionDetailsCollapsed={false}
+              descriptionDetails={
                 <>
                   <p>
                     {t(
@@ -459,7 +459,7 @@ class DatasourceControl extends PureComponent {
                   </p>
                   <p>
                     <Button
-                      buttonStyle="primary"
+                      buttonStyle="warning"
                       onClick={() =>
                         this.handleMenuItemClick({ key: CHANGE_DATASET })
                       }

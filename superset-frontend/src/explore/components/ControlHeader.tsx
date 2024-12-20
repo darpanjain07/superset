@@ -64,7 +64,7 @@ const ControlHeader: FC<ControlHeaderProps> = ({
   warning,
   danger,
 }) => {
-  const { gridUnit, colors } = useTheme();
+  const { sizeUnit, colors } = useTheme();
   const hasHadNoErrors = useRef(false);
   const labelColor = useMemo(() => {
     if (!validationErrors.length) {
@@ -73,14 +73,14 @@ const ControlHeader: FC<ControlHeaderProps> = ({
 
     if (hasHadNoErrors.current) {
       if (validationErrors.length) {
-        return colors.error.base;
+        return colors.error.text;
       }
 
       return 'unset';
     }
 
-    return colors.alert.base;
-  }, [colors.error.base, colors.alert.base, validationErrors.length]);
+    return colors.warning.text;
+  }, [colors.error.text, colors.warning.text, validationErrors.length]);
 
   if (!label) {
     return null;
@@ -97,7 +97,7 @@ const ControlHeader: FC<ControlHeaderProps> = ({
           position: absolute;
           top: 50%;
           right: 0;
-          padding-left: ${gridUnit}px;
+          padding-left: ${sizeUnit}px;
           transform: translate(100%, -50%);
           white-space: nowrap;
         `}
@@ -135,7 +135,7 @@ const ControlHeader: FC<ControlHeaderProps> = ({
       <div className="pull-left">
         <FormLabel
           css={(theme: SupersetTheme) => css`
-            margin-bottom: ${theme.gridUnit * 0.5}px;
+            margin-bottom: ${theme.sizeUnit * 0.5}px;
             position: relative;
           `}
         >
@@ -151,14 +151,17 @@ const ControlHeader: FC<ControlHeaderProps> = ({
           {warning && (
             <span>
               <Tooltip id="error-tooltip" placement="top" title={warning}>
-                <Icons.AlertSolid iconColor={colors.alert.base} iconSize="s" />
+                <Icons.AlertSolid
+                  iconColor={colors.warning.text}
+                  iconSize="s"
+                />
               </Tooltip>{' '}
             </span>
           )}
           {danger && (
             <span>
               <Tooltip id="error-tooltip" placement="top" title={danger}>
-                <Icons.ErrorSolid iconColor={colors.error.base} iconSize="s" />
+                <Icons.ErrorSolid iconColor={colors.error.text} iconSize="s" />
               </Tooltip>{' '}
             </span>
           )}

@@ -50,12 +50,39 @@ type AceEditorWrapperProps = {
 
 const StyledAceEditor = styled(AceEditor)`
   ${({ theme }) => css`
+    color: ${theme.colors.grayscale.text};
     && {
       // double class is better than !important
-      border: 1px solid ${theme.colors.grayscale.light2};
+      border: 1px solid ${theme.colors.grayscale.border};
       font-feature-settings:
         'liga' off,
         'calt' off;
+
+      .ace_editor {
+        font-family: 'Roboto Mono', monospace;
+        font-size: 14px;
+        background-color: ${theme.colorBgContainerDisabled};
+      }
+      .ace-github {
+        color: ${theme.colors.grayscale.text};
+      }
+
+      .ace_gutter {
+        background-color: ${theme.colorBgTextHover};
+        color: ${theme.colors.grayscale.text};
+      }
+
+      .ace_cursor {
+        color: ${theme.colors.primary.text};
+      }
+
+      .ace_marker-layer .ace_active-line {
+        background: ${theme.colorBgTextHover};
+      }
+
+      .ace_marker-layer .ace_selection {
+        background: ${theme.colorPrimaryBgHover};
+      }
     }
   `}
 `;
@@ -200,7 +227,7 @@ const AceEditorWrapper = ({
           .ace_autocomplete {
             // Use !important because Ace Editor applies extra CSS at the last second
             // when opening the autocomplete.
-            width: ${theme.gridUnit * 130}px !important;
+            width: ${theme.sizeUnit * 130}px !important;
           }
 
           .ace_tooltip {

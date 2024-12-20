@@ -102,34 +102,34 @@ const StyledResizable = styled(Resizable)`
 
       &--bottom-right {
         position: absolute;
-        border-right: 1px solid ${theme.colors.text.label};
-        border-bottom: 1px solid ${theme.colors.text.label};
-        right: ${theme.gridUnit * 4}px;
-        bottom: ${theme.gridUnit * 4}px;
-        width: ${theme.gridUnit * 2}px;
-        height: ${theme.gridUnit * 2}px;
+        border-right: 1px solid ${theme.colors.grayscale.border};
+        border-bottom: 1px solid ${theme.colors.grayscale.border};
+        right: ${theme.sizeUnit * 4}px;
+        bottom: ${theme.sizeUnit * 4}px;
+        width: ${theme.sizeUnit * 2}px;
+        height: ${theme.sizeUnit * 2}px;
       }
 
       &--right {
-        width: ${theme.gridUnit / 2}px;
-        height: ${theme.gridUnit * 5}px;
-        right: ${theme.gridUnit}px;
+        width: ${theme.sizeUnit / 2}px;
+        height: ${theme.sizeUnit * 5}px;
+        right: ${theme.sizeUnit}px;
         top: 50%;
         transform: translate(0, -50%);
         position: absolute;
-        border-left: 1px solid ${theme.colors.text.label};
-        border-right: 1px solid ${theme.colors.text.label};
+        border-left: 1px solid ${theme.colors.grayscale.border};
+        border-right: 1px solid ${theme.colors.grayscale.border};
       }
 
       &--bottom {
-        height: ${theme.gridUnit / 2}px;
-        width: ${theme.gridUnit * 5}px;
-        bottom: ${theme.gridUnit}px;
+        height: ${theme.sizeUnit / 2}px;
+        width: ${theme.sizeUnit * 5}px;
+        bottom: ${theme.sizeUnit}px;
         left: 50%;
         transform: translate(-50%);
         position: absolute;
-        border-top: 1px solid ${theme.colors.text.label};
-        border-bottom: 1px solid ${theme.colors.text.label};
+        border-top: 1px solid ${theme.colors.grayscale.border};
+        border-bottom: 1px solid ${theme.colors.grayscale.border};
       }
     }
   `}
