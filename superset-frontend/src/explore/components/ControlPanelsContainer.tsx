@@ -117,8 +117,8 @@ const actionButtonsContainerStyles = (theme: SupersetTheme) => css`
   padding: ${theme.sizeUnit * 4}px;
   z-index: 999;
   background: linear-gradient(
-    ${rgba(theme.colors.grayscale.light5, 0)},
-    ${theme.colors.grayscale.light5} 35%
+    ${rgba(theme.colorBgLayout, 0)},
+    ${theme.colorBgLayout} 35%
   );
 
   & > button {
@@ -176,7 +176,7 @@ const ControlPanelsTabs = styled(Tabs)`
 
     .ant-collapse-ghost > .ant-collapse-item {
       &:not(:last-child) {
-        border-bottom: 1px solid ${theme.colors.grayscale.light3};
+        border-bottom: 1px solid ${theme.colorTextTertiary};
       }
 
       & > .ant-collapse-header {
@@ -268,7 +268,7 @@ function useResetOnChangeRef(initialValue: () => any, resetOnChangeValue: any) {
 }
 
 export const ControlPanelsContainer = (props: ControlPanelsContainerProps) => {
-  const { colors } = useTheme();
+  const theme = useTheme();
   const pluginContext = useContext(PluginContext);
 
   const prevState = usePrevious(props.exploreState);
@@ -586,8 +586,8 @@ export const ControlPanelsContainer = (props: ControlPanelsContainerProps) => {
     }
 
     const errorColor = sectionHasHadNoErrors.current[sectionId]
-      ? colors.warning.text
-      : colors.error.text;
+      ? theme.colorWarningText
+      : theme.colorErrorText;
 
     const PanelHeader = () => (
       <span data-test="collapsible-control-panel-header">
@@ -746,8 +746,8 @@ export const ControlPanelsContainer = (props: ControlPanelsContainerProps) => {
     }
 
     const errorColor = dataTabHasHadNoErrors.current
-      ? colors.error.text
-      : colors.warning.text;
+      ? theme.colorWarningText
+      : theme.colorErrorText;
 
     return (
       <>
@@ -776,8 +776,8 @@ export const ControlPanelsContainer = (props: ControlPanelsContainerProps) => {
       </>
     );
   }, [
-    colors.error.text,
-    colors.warning.text,
+    theme.colorErrorText,
+    theme.colorWarningText,
     dataTabHasHadNoErrors,
     props.errorMessage,
   ]);

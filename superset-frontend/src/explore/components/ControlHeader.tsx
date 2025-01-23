@@ -64,7 +64,7 @@ const ControlHeader: FC<ControlHeaderProps> = ({
   warning,
   danger,
 }) => {
-  const { sizeUnit, colors } = useTheme();
+  const theme = useTheme();
   const hasHadNoErrors = useRef(false);
   const labelColor = useMemo(() => {
     if (!validationErrors.length) {
@@ -73,14 +73,14 @@ const ControlHeader: FC<ControlHeaderProps> = ({
 
     if (hasHadNoErrors.current) {
       if (validationErrors.length) {
-        return colors.error.text;
+        return theme.colorErrorText;
       }
 
       return 'unset';
     }
 
-    return colors.warning.text;
-  }, [colors.error.text, colors.warning.text, validationErrors.length]);
+    return theme.colorWarningText;
+  }, [theme.colorErrorText, theme.colorWarningText, validationErrors.length]);
 
   if (!label) {
     return null;
@@ -97,7 +97,7 @@ const ControlHeader: FC<ControlHeaderProps> = ({
           position: absolute;
           top: 50%;
           right: 0;
-          padding-left: ${sizeUnit}px;
+          padding-left: ${theme.sizeUnit}px;
           transform: translate(100%, -50%);
           white-space: nowrap;
         `}
@@ -152,7 +152,7 @@ const ControlHeader: FC<ControlHeaderProps> = ({
             <span>
               <Tooltip id="error-tooltip" placement="top" title={warning}>
                 <Icons.AlertSolid
-                  iconColor={colors.warning.text}
+                  iconColor={theme.colorWarningText}
                   iconSize="s"
                 />
               </Tooltip>{' '}
@@ -161,7 +161,10 @@ const ControlHeader: FC<ControlHeaderProps> = ({
           {danger && (
             <span>
               <Tooltip id="error-tooltip" placement="top" title={danger}>
-                <Icons.ErrorSolid iconColor={colors.error.text} iconSize="s" />
+                <Icons.ErrorSolid
+                  iconColor={theme.colorErrorText}
+                  iconSize="s"
+                />
               </Tooltip>{' '}
             </span>
           )}

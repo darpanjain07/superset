@@ -33,31 +33,34 @@ import { StatusMessage, StyledFormItem, FilterPluginStyle } from '../common';
 import { getRangeExtraFormData } from '../../utils';
 import { SingleValueType } from './SingleValueType';
 
+const LIGHT_BLUE = '#99e7f0';
+const DARK_BLUE = '#6dd3e3';
+const LIGHT_GRAY = '#f5f5f5';
+const DARK_GRAY = '#e1e1e1';
+
 const StyledMinSlider = styled(AntdSlider)<{
   validateStatus?: 'error' | 'warning' | 'info';
 }>`
   ${({ theme, validateStatus }) => `
   .ant-slider-rail {
     background-color: ${
-      validateStatus ? theme.colors[validateStatus]?.text : theme.colorInfoText
+      validateStatus ? theme.colors[validateStatus]?.light1 : LIGHT_BLUE
     };
   }
 
   .ant-slider-track {
-    background-color: ${theme.colorBgContainer};
+    background-color: ${LIGHT_GRAY};
   }
 
   &:hover {
     .ant-slider-rail {
       background-color: ${
-        validateStatus
-          ? theme.colors[validateStatus]?.bgHover
-          : theme.colorInfoBgHover
+        validateStatus ? theme.colors[validateStatus]?.base : DARK_BLUE
       };
     }
 
     .ant-slider-track {
-      background-color: ${theme.colorBgSpotlight};
+      background-color: ${DARK_GRAY};
     }
   }
   `}
@@ -72,10 +75,10 @@ const Wrapper = styled.div<{
     border: 1px solid transparent;
     &:focus {
       border: 1px solid
-        ${theme.colors[validateStatus || 'primary']?.text};
+        ${theme.colors[validateStatus || 'primary']?.base};
       outline: 0;
       box-shadow: 0 0 0 3px
-        ${rgba(theme.colors[validateStatus || 'primary']?.text, 0.2)};
+        ${rgba(theme.colors[validateStatus || 'primary']?.base, 0.2)};
     }
     & .ant-slider {
       margin-top: ${

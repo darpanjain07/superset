@@ -37,7 +37,7 @@ const AlertContainer = styled.div`
     margin: ${theme.sizeUnit * 4}px;
     padding: ${theme.sizeUnit * 4}px;
 
-    border: 1px solid ${theme.colors.info.border};
+    border: 1px solid ${theme.colorInfoBorder};
     background-color: ${theme.colorInfoBg};
     border-radius: 2px;
 
@@ -58,7 +58,7 @@ const AlertContainer = styled.div`
     }
 
     &.alert-type-warning {
-      border-color: ${theme.colors.error.border};
+      border-color: ${theme.colorErrorBorder};
       background-color: ${theme.colorErrorBg};
 
       p {

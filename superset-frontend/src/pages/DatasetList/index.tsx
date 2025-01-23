@@ -89,13 +89,13 @@ const Actions = styled.div`
     i {
       &:hover {
         path {
-          fill: ${({ theme }) => theme.colorTextHover};
+          fill: ${({ theme }) => theme.colorText};
         }
       }
     }
     color: ${({ theme }) => theme.colorText};
     .ant-menu-item:hover {
-      color: ${({ theme }) => theme.colorTextHover};
+      color: ${({ theme }) => theme.colorText};
       cursor: default;
     }
     &::after {

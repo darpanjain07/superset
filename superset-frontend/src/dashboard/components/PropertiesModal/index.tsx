@@ -64,7 +64,7 @@ const StyledFormItem = styled(FormItem)`
 
 const StyledJsonEditor = styled(JsonEditor)`
   border-radius: ${({ theme }) => theme.borderRadius}px;
-  border: 1px solid ${({ theme }) => theme.colors.primary.border};
+  border: 1px solid ${({ theme }) => theme.colorPrimaryBorder};
 `;
 
 type PropertiesModalProps = {

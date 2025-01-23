@@ -69,7 +69,7 @@ export interface ColorSchemeControlProps {
 }
 
 const StyledAlert = styled(Icons.AlertSolid)`
-  color: ${({ theme }) => theme.colors.warning.text};
+  color: ${({ theme }) => theme.colorWarningText};
 `;
 
 const CUSTOM_LABEL_ALERT = t(

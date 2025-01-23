@@ -47,7 +47,7 @@ const PaginationList = styled.ul`
       &:hover,
       &:focus {
         z-index: 2;
-        color: ${({ theme }) => theme.colorTextHover};
+        color: ${({ theme }) => theme.colorText};
         background-color: ${({ theme }) => theme.colorBgLayout};
       }
     }

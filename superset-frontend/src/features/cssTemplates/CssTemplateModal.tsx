@@ -44,7 +44,7 @@ const StyledCssTemplateTitle = styled.div`
 
 const StyledCssEditor = styled(CssEditor)`
   border-radius: ${({ theme }) => theme.borderRadius}px;
-  border: 1px solid ${({ theme }) => theme.colors.primary.border};
+  border: 1px solid ${({ theme }) => theme.colorPrimaryBorder};
 `;
 
 const TemplateContainer = styled.div`

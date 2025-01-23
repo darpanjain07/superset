@@ -91,14 +91,8 @@ export default function Button(props: ButtonProps) {
   } = props;
 
   const theme = useTheme();
-  const {
-    colors,
-    transitionTiming,
-    borderRadius,
-    fontSizeSM,
-    fontWeightStrong,
-  } = theme;
-  const { primary, grayscale, success, warning } = colors;
+  const { transitionTiming, borderRadius, fontSizeSM, fontWeightStrong } =
+    theme;
 
   let height = 32;
   let padding = 18;
@@ -129,8 +123,8 @@ export default function Button(props: ButtonProps) {
     backgroundColorDisabled = grayscale.light5;
     borderWidth = 1;
     borderStyle = buttonStyle === 'dashed' ? 'dashed' : 'solid';
-    borderColor = primary.border;
-    borderColorHover = primary.borderHover;
+    borderColor = theme.colorPrimaryBorder;
+    borderColorHover = theme.colorPrimaryBorderHover;
     borderColorDisabled = grayscale.light2;
   } else if (buttonStyle === 'danger') {
     colorHover = color;

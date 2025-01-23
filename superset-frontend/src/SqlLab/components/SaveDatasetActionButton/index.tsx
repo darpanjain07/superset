@@ -44,7 +44,7 @@ const SaveDatasetActionButton = ({
       &:nth-of-type(2) {
         &:before,
         &:hover:before {
-          border-left: 2px solid ${theme.colors.primary.borderHover};
+          border-left: 2px solid ${theme.colorBorder};
         }
       }
     }

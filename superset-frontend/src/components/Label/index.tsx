@@ -24,7 +24,7 @@ import {
 } from 'react';
 
 import { Tag } from 'src/components';
-import { useTheme } from '@superset-ui/core';
+import { useTheme, themeObject } from '@superset-ui/core';
 import DatasetTypeLabel from 'src/components/Label/reusable/DatasetTypeLabel';
 import PublishedLabel from 'src/components/Label/reusable/PublishedLabel';
 

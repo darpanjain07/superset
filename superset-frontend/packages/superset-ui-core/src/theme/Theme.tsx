@@ -55,16 +55,6 @@ interface ColorVariations {
   dark3: string;
   dark4: string;
   dark5: string;
-  // new stuff
-  bg: string;
-  bgHover: string;
-  border: string;
-  borderHover: string;
-  hover: string;
-  active: string;
-  textHover: string;
-  text: string;
-  textActive: string;
 }
 
 interface ThemeColors {
@@ -391,16 +381,6 @@ export class Theme {
       dark3: adjustColor(color, 40, bg),
       dark4: adjustColor(color, 60, bg),
       dark5: adjustColor(color, 80, bg),
-      // new stuff
-      active: adjustColor(color, 80, bg),
-      textActive: adjustColor(color, 70, bg),
-      text: adjustColor(color, 20, bg),
-      textHover: adjustColor(color, 30, fg),
-      hover: adjustColor(color, 40, fg),
-      borderHover: adjustColor(color, 50, fg),
-      border: adjustColor(color, 70, fg),
-      bgHover: adjustColor(color, 80, fg),
-      bg: adjustColor(color, 90, fg),
     };
   }
 
