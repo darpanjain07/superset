@@ -41,6 +41,7 @@ export type AntdMenuItemType = ReactElement & {
 export type MenuItemChildType = AntdMenuItemType;
 
 const StyledMenuItem = styled(AntdMenu.Item)`
+  line-height: 1.6;
   a {
     text-decoration: none;
   }
