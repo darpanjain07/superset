@@ -31,11 +31,10 @@ const colorTypes = [
 const AntDFunctionalColors = ({ antdTheme }) => {
   const { antd } = supersetTheme;
 
-  // Define color types and variations dynamically
-  const variations = [
+  // Define color types and variants dynamically
+  const variants = [
     'active',
     'textActive',
-    'base',
     'text',
     'textHover',
     'hover',
@@ -53,12 +52,12 @@ const AntDFunctionalColors = ({ antdTheme }) => {
       <thead>
         <tr>
           <th style={{ border: '1px solid #ddd', padding: '8px' }}>Type</th>
-          {variations.map(variation => (
+          {variants.map(variant => (
             <th
-              key={variation}
+              key={variant}
               style={{ border: '1px solid #ddd', padding: '8px' }}
             >
-              {variation}
+              {variant}
             </th>
           ))}
         </tr>
@@ -71,16 +70,16 @@ const AntDFunctionalColors = ({ antdTheme }) => {
               <td style={{ border: '1px solid #ddd', padding: '8px' }}>
                 <strong>{type}</strong>
               </td>
-              {variations.map(variation => {
-                const color = colors[type][variation];
+              {variants.map(variant => {
+                const color = themeObject.getColorVariants(type)[variant];
                 return (
                   <td
-                    key={variation}
+                    key={variant}
                     style={{
                       border: '1px solid #ddd',
                       padding: '8px',
                       backgroundColor: color || 'transparent',
-                      color: [`color${type}${variation}`],
+                      color: [`color${type}${variant}`],
                     }}
                   >
                     {color ? <code>{color}</code> : '-'}

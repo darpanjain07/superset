@@ -42,6 +42,17 @@ interface SystemColors {
   colorSuccess: string;
   colorInfo: string;
 }
+interface ColorVariants {
+  bg: string;
+  border: string;
+  hover: string;
+  active: string;
+  textHover: string;
+  text: string;
+  borderHover: string;
+  bgHover: string;
+  textActive: string;
+}
 
 interface ColorVariations {
   base: string;
@@ -495,6 +506,21 @@ export class Theme {
     this.updateTheme(theme, antdConfig);
   }
 
+  getColorVariants(color: string): ColorVariants {
+    const firstLetterCapped = color.charAt(0).toUpperCase() + color.slice(1);
+    return {
+      active: this.theme[`color${firstLetterCapped}Active`],
+      textActive: this.theme[`color${firstLetterCapped}TextActive`],
+      text: this.theme[`color${firstLetterCapped}Text`],
+      textHover: this.theme[`color${firstLetterCapped}TextHover`],
+      hover: this.theme[`color${firstLetterCapped}Hover`],
+      borderHover: this.theme[`color${firstLetterCapped}BorderHover`],
+      border: this.theme[`color${firstLetterCapped}Border`],
+      bgHover: this.theme[`color${firstLetterCapped}BgHover`],
+      bg: this.theme[`color${firstLetterCapped}Bg`],
+    };
+  }
+
   private static getAntdTokens(antdConfig: AntdThemeConfig): AntdTokens {
     return antdThemeImport.getDesignToken(antdConfig);
   }
@@ -503,7 +529,7 @@ export class Theme {
     this.antdConfig = antdConfig;
     const tokens = Theme.getFilteredAntdTheme(antdConfig);
     const systemColors = Theme.getSystemColors(tokens);
-    const isDark = tinycolor(tokens.colorBgBase).isDark();
+    const isDark = tinycolor(tokens.colorBgContainer).isDark();
 
     this.theme = {
       colors: Theme.getColors(systemColors, isDark),

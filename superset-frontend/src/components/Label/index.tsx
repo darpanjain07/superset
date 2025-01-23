@@ -36,8 +36,7 @@ export type Type =
   | 'error'
   | 'info'
   | 'default'
-  | 'primary'
-  | 'secondary';
+  | 'primary';
 
 export interface LabelProps extends HTMLAttributes<HTMLSpanElement> {
   key?: string;
@@ -53,7 +52,7 @@ export interface LabelProps extends HTMLAttributes<HTMLSpanElement> {
 
 export default function Label(props: LabelProps) {
   const theme = useTheme();
-  const { colors, transitionTiming } = theme;
+  const { transitionTiming } = theme;
   const {
     type = 'default',
     monospace = false,
@@ -64,12 +63,7 @@ export default function Label(props: LabelProps) {
     ...rest
   } = props;
 
-  let baseColor;
-  if (type === 'default' || type === 'secondary') {
-    baseColor = colors.grayscale;
-  } else {
-    baseColor = colors[type];
-  }
+  const baseColor = themeObject.getColorVariants(type);
   const color = baseColor.active;
   const borderColor = baseColor.border;
   const backgroundColor = baseColor.bg;

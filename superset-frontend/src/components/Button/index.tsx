@@ -93,6 +93,7 @@ export default function Button(props: ButtonProps) {
   const theme = useTheme();
   const { transitionTiming, borderRadius, fontSizeSM, fontWeightStrong } =
     theme;
+  const { primary, grayscale, warning } = theme.colors;
 
   let height = 32;
   let padding = 18;
@@ -112,7 +113,7 @@ export default function Button(props: ButtonProps) {
   let colorHover;
   let borderWidth = 0;
   let borderStyle = 'none';
-  let borderColor = grayscale.border;
+  let borderColor = theme.colorBorder;
   let borderColorHover;
   let borderColorDisabled = 'transparent';
 
@@ -123,21 +124,21 @@ export default function Button(props: ButtonProps) {
     backgroundColorDisabled = grayscale.light5;
     borderWidth = 1;
     borderStyle = buttonStyle === 'dashed' ? 'dashed' : 'solid';
-    borderColor = theme.colorPrimaryBorder;
-    borderColorHover = theme.colorPrimaryBorderHover;
+    borderColor = primary.dark1;
+    borderColorHover = primary.light1;
     borderColorDisabled = grayscale.light2;
   } else if (buttonStyle === 'danger') {
     colorHover = color;
   } else if (buttonStyle === 'warning') {
     backgroundColor = warning.base;
-    backgroundColorHover = mix(0.1, grayscale.dark2, warning.base);
-    backgroundColorActive = mix(0.2, grayscale.dark2, warning.base);
+    backgroundColorHover = mix(0.1, grayscale.dark2, theme.colorWarningActive);
+    backgroundColorActive = mix(0.2, grayscale.dark2, theme.colorWarningActive);
     color = grayscale.light5;
     colorHover = color;
   } else if (buttonStyle === 'success') {
-    backgroundColor = success.base;
-    backgroundColorHover = mix(0.1, grayscale.light5, success.base);
-    backgroundColorActive = mix(0.2, grayscale.dark2, success.base);
+    backgroundColor = theme.colorSuccessText;
+    backgroundColorHover = mix(0.1, grayscale.light5, theme.colorSuccessActive);
+    backgroundColorActive = mix(0.2, grayscale.dark2, theme.colorSuccessActive);
     color = grayscale.light5;
     colorHover = color;
   } else if (buttonStyle === 'link') {

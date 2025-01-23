@@ -35,7 +35,6 @@ export const options: Type[] = [
   'warning',
   'error',
   'primary',
-  'secondary',
 ];
 
 // Define the props for the `LabelGallery` component
