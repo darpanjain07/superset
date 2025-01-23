@@ -162,7 +162,7 @@ export default function PopKPI(props: PopKPIProps) {
     margin-left: ${theme.sizeUnit}px;
   `;
 
-  const defaultBackgroundColor = theme.colors.grayscale.bg;
+  const defaultBackgroundColor = theme.colorBgContainer;
   const defaultTextColor = theme.colors.grayscale.base;
   const { backgroundColor, textColor } = useMemo(() => {
     let bgColor = defaultBackgroundColor;

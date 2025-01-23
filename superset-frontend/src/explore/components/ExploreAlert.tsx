@@ -38,7 +38,7 @@ const AlertContainer = styled.div`
     padding: ${theme.sizeUnit * 4}px;
 
     border: 1px solid ${theme.colors.info.border};
-    background-color: ${theme.colors.info.bg};
+    background-color: ${theme.colorInfoBg};
     border-radius: 2px;
 
     color: ${theme.colors.info.dark2};

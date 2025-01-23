@@ -39,7 +39,7 @@ const PaginationList = styled.ul`
     > span {
       padding: 8px 12px;
       text-decoration: none;
-      background-color: ${({ theme }) => theme.colors.grayscale.bg};
+      background-color: ${({ theme }) => theme.colorBgContainer};
       border: 1px solid ${({ theme }) => theme.colorBorder};
       border-radius: ${({ theme }) => theme.borderRadius}px;
       color: ${({ theme }) => theme.colorText};
@@ -48,7 +48,7 @@ const PaginationList = styled.ul`
       &:focus {
         z-index: 2;
         color: ${({ theme }) => theme.colorTextHover};
-        background-color: ${({ theme }) => theme.colors.grayscale.bgHover};
+        background-color: ${({ theme }) => theme.colorBgLayout};
       }
     }
 
@@ -65,7 +65,7 @@ const PaginationList = styled.ul`
     &.active {
       span {
         z-index: 3;
-        color: ${({ theme }) => theme.colors.grayscale.bgHover};
+        color: ${({ theme }) => theme.colorBgLayout};
         cursor: default;
         background-color: ${({ theme }) => theme.colorPrimary};
 

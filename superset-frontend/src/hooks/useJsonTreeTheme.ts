@@ -22,8 +22,8 @@ export const useJsonTreeTheme = () => {
   const theme = useTheme();
 
   return {
-    base00: theme.colors.grayscale.bg,
-    base01: theme.colors.grayscale.bgHover,
+    base00: theme.colorBgContainer,
+    base01: theme.colorBgLayout,
     base02: theme.colorBorder,
     base03: theme.colorBorderHover,
     base04: theme.colorTextHover,

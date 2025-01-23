@@ -75,7 +75,7 @@ const StyledContainer = styled.div`
     max-width: ${MAX_ADVISABLE_VIZ_GALLERY_WIDTH}px;
     max-height: calc(100vh - ${ESTIMATED_NAV_HEIGHT}px);
     border-radius: ${theme.sizeUnit}px;
-    background-color: ${theme.colors.grayscale.bg};
+    background-color: ${theme.colorBgContainer};
     margin-left: auto;
     margin-right: auto;
     padding-left: ${theme.sizeUnit * 4}px;

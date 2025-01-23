@@ -40,7 +40,7 @@ const JustifyEnd = styled.div`
 `;
 
 const colorSchemeOptions = (theme: SupersetTheme) => [
-  { value: theme.colors.success.bg, label: t('success') },
+  { value: theme.colorSuccessBg, label: t('success') },
   { value: theme.colorErrorBg, label: t('alert') },
   { value: theme.colorErrorBg, label: t('error') },
   { value: theme.colorSuccessText, label: t('success dark') },

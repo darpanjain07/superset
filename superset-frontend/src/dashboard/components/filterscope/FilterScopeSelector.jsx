@@ -175,7 +175,7 @@ const ScopeSelector = styled.div`
           &.is-selected {
             border: 1px solid ${theme.colorBorder};
             border-radius: ${theme.borderRadius}px;
-            background-color: ${theme.colors.grayscale.bg};
+            background-color: ${theme.colorBgContainer};
             margin-left: ${theme.sizeUnit * -6}px;
           }
         }
@@ -215,7 +215,7 @@ const ScopeSelector = styled.div`
           &.selected-filter {
             padding-left: ${theme.sizeUnit * 7}px;
             position: relative;
-            color: ${theme.colors.grayscale.bgTextActive};
+            color: ${theme.colorBgContainerTextActive};
 
             &::before {
               content: ' ';

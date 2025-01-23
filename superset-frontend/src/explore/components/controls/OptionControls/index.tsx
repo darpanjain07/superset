@@ -42,11 +42,11 @@ export const OptionControlContainer = styled.div<{
   width: 100%;
   font-size: ${({ theme }) => theme.fontSizeSM}px;
   height: ${({ theme }) => theme.sizeUnit * 6}px;
-  background-color: ${({ theme }) => theme.colors.grayscale.bg};
+  background-color: ${({ theme }) => theme.colorBgContainer};
   border-radius: 3px;
   cursor: ${({ withCaret }) => (withCaret ? 'pointer' : 'default')};
   :hover {
-    background-color: ${({ theme }) => theme.colors.grayscale.bgHover};
+    background-color: ${({ theme }) => theme.colorBgLayout};
   }
 `;
 export const Label = styled.div`

@@ -52,7 +52,7 @@ const StyledMinSlider = styled(AntdSlider)<{
       background-color: ${
         validateStatus
           ? theme.colors[validateStatus]?.bgHover
-          : theme.colors.info.bgHover
+          : theme.colorInfoBgHover
       };
     }
 

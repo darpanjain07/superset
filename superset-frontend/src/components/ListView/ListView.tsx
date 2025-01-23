@@ -156,7 +156,7 @@ const ViewModeContainer = styled.div`
   .active {
     background-color: ${({ theme }) => theme.colors.grayscale.base};
     svg {
-      color: ${({ theme }) => theme.colors.grayscale.bgHover};
+      color: ${({ theme }) => theme.colorBgLayout};
     }
   }
 `;
@@ -165,7 +165,7 @@ const EmptyWrapper = styled.div`
   padding: ${({ theme }) => theme.sizeUnit * 40}px 0;
 
   &.table {
-    background: ${({ theme }) => theme.colors.grayscale.bg};
+    background: ${({ theme }) => theme.colorBgContainer};
   }
 `;
 
