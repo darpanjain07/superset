@@ -50,11 +50,11 @@ const StyledCell = styled('div')<{ height?: number }>(
 
 const StyledTable = styled(AntTable)<{ height?: number }>(
   ({ theme }) => `
-    color: ${theme.colors.grayscale.text};
+    color: ${theme.colorText};
     background-color: ${theme.colorBgContainer};
     th.ant-table-cell {
       font-weight: ${theme.fontWeightStrong};
-      color: ${theme.colors.grayscale.text};
+      color: ${theme.colorText};
       user-select: none;
       white-space: nowrap;
       overflow: hidden;

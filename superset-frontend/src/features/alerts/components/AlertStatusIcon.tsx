@@ -40,7 +40,7 @@ function getStatusColor(
     case AlertState.Grace:
       return theme.colors.error.text;
     default:
-      return theme.colors.grayscale.text;
+      return theme.colorText;
   }
 }
 

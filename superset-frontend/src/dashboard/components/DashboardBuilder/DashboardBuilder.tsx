@@ -151,7 +151,7 @@ const DashboardContentWrapper = styled.div`
       }
 
       .dropdown-toggle.btn.btn-primary .caret {
-        color: ${theme.colors.grayscale.text};
+        color: ${theme.colorText};
       }
 
       .background--transparent {

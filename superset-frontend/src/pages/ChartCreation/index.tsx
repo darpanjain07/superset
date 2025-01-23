@@ -98,7 +98,7 @@ const StyledContainer = styled.div`
       }
 
       & > span {
-        color: ${theme.colors.grayscale.text};
+        color: ${theme.colorText};
         margin-left: ${theme.sizeUnit * 4}px;
       }
     }
@@ -119,7 +119,7 @@ const StyledContainer = styled.div`
       align-items: center;
 
       & > span {
-        color: ${theme.colors.grayscale.text};
+        color: ${theme.colorText};
         margin-right: ${theme.sizeUnit * 4}px;
       }
     }

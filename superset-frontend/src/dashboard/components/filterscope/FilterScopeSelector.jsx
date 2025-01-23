@@ -200,7 +200,7 @@ const ScopeSelector = styled.div`
 
       .react-checkbox-tree {
         flex-direction: column;
-        color: ${theme.colors.grayscale.text};
+        color: ${theme.colorText};
         font-size: ${theme.fontSize}px;
 
         .filter-scope-type {

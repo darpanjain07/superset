@@ -255,7 +255,7 @@ export const StyledInputContainer = styled.div`
 
     .helper {
       display: block;
-      color: ${theme.colors.grayscale.base};
+      color: ${theme.colorTextTertiary};
       font-size: ${theme.fontSizeSM}px;
       padding: ${theme.sizeUnit}px 0;
       text-align: left;
@@ -290,7 +290,7 @@ export const StyledInputContainer = styled.div`
     }
 
     input[disabled] {
-      color: ${theme.colors.grayscale.base};
+      color: ${theme.colorTextDisabled};
     }
 
     textarea {
@@ -300,7 +300,7 @@ export const StyledInputContainer = styled.div`
 
     input::placeholder,
     textarea::placeholder {
-      color: ${theme.colors.grayscale.light1};
+      color: ${theme.colorTextPlaceholder};
     }
 
     textarea,
@@ -308,7 +308,7 @@ export const StyledInputContainer = styled.div`
     input[type='number'] {
       padding: ${theme.sizeUnit}px ${theme.sizeUnit * 2}px;
       border-style: none;
-      border: 1px solid ${theme.colors.grayscale.light2};
+      border: 1px solid ${theme.colorBorder};
       border-radius: ${theme.sizeUnit}px;
 
       &[name='description'] {
@@ -341,7 +341,7 @@ const StyledNotificationAddButton = styled.div`
     }
 
     &.disabled {
-      color: ${theme.colors.grayscale.light1};
+      color: ${theme.colorTextDisabled};
       cursor: default;
     }
   `}

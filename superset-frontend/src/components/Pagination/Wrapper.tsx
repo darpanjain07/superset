@@ -42,12 +42,12 @@ const PaginationList = styled.ul`
       background-color: ${({ theme }) => theme.colors.grayscale.bg};
       border: 1px solid ${({ theme }) => theme.colorBorder};
       border-radius: ${({ theme }) => theme.borderRadius}px;
-      color: ${({ theme }) => theme.colors.grayscale.text};
+      color: ${({ theme }) => theme.colorText};
 
       &:hover,
       &:focus {
         z-index: 2;
-        color: ${({ theme }) => theme.colors.grayscale.textHover};
+        color: ${({ theme }) => theme.colorTextHover};
         background-color: ${({ theme }) => theme.colors.grayscale.bgHover};
       }
     }

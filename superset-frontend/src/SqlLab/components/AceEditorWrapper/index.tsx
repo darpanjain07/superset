@@ -50,7 +50,7 @@ type AceEditorWrapperProps = {
 
 const StyledAceEditor = styled(AceEditor)`
   ${({ theme }) => css`
-    color: ${theme.colors.grayscale.text};
+    color: ${theme.colorText};
     && {
       // double class is better than !important
       border: 1px solid ${theme.colorBorder};
@@ -64,12 +64,12 @@ const StyledAceEditor = styled(AceEditor)`
         background-color: ${theme.colorBgContainerDisabled};
       }
       .ace-github {
-        color: ${theme.colors.grayscale.text};
+        color: ${theme.colorText};
       }
 
       .ace_gutter {
         background-color: ${theme.colorBgTextHover};
-        color: ${theme.colors.grayscale.text};
+        color: ${theme.colorText};
       }
 
       .ace_cursor {

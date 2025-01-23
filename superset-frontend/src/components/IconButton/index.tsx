@@ -135,7 +135,7 @@ const IconButton = styled(
   &:hover,
   &:focus {
     background-color: ${({ theme }) => theme.colorBgTextHover};
-    color: ${({ theme }) => theme.colors.grayscale.textHover};
+    color: ${({ theme }) => theme.colorTextHover};
     border: 1px solid ${({ theme }) => theme.colorBorder};
     box-shadow: ${({ theme }) => theme.boxShadowSecondary};
   }
