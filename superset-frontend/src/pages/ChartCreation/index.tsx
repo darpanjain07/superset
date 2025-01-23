@@ -104,7 +104,7 @@ const StyledContainer = styled.div`
     }
 
     & .viz-gallery {
-      border: 1px solid ${theme.colors.grayscale.border};
+      border: 1px solid ${theme.colorBorder};
       border-radius: ${theme.sizeUnit}px;
       margin: ${theme.sizeUnit}px 0px;
       max-height: calc(100vh - ${ELEMENTS_EXCEPT_VIZ_GALLERY}px);

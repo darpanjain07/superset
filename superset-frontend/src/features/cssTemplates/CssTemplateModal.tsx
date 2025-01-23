@@ -62,7 +62,7 @@ const TemplateContainer = styled.div`
   input[type='text'] {
     padding: ${({ theme }) => theme.sizeUnit * 1.5}px
       ${({ theme }) => theme.sizeUnit * 2}px;
-    border: 1px solid ${({ theme }) => theme.colors.grayscale.border};
+    border: 1px solid ${({ theme }) => theme.colorBorder};
     border-radius: ${({ theme }) => theme.sizeUnit}px;
     width: 50%;
   }

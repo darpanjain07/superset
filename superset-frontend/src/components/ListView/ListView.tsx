@@ -110,7 +110,7 @@ const BulkSelectWrapper = styled(Alert)`
       }px`};
       width: 1px;
       height: ${theme.sizeUnit * 8}px;
-      box-shadow: inset -1px 0px 0px ${theme.colors.grayscale.border};
+      box-shadow: inset -1px 0px 0px ${theme.colorBorder};
       display: inline-flex;
       vertical-align: middle;
       position: relative;

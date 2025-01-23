@@ -32,17 +32,17 @@ export const FilterTitle = styled.div`
       border-radius: ${theme.borderRadius}px;
       cursor: pointer;
       &.active {
-        color: ${theme.colors.grayscale.dark1};
+        color: ${theme.colorPrimaryActive};
         border-radius: ${theme.borderRadius}px;
-        background-color: ${theme.colors.primary.bg};
+        background-color: ${theme.colorPrimaryBg};
         span, .anticon {
-          color: ${theme.colors.grayscale.dark1};
+          color: ${theme.colorIcon};
         }
       }
       &:hover {
-        color: ${theme.colors.primary.light1};
+        color: ${theme.colorPrimaryHover};
         span, .anticon {
-          color: ${theme.colors.primary.light1};
+          color: ${theme.colorPrimaryHover};
         }
       }
       &.errored div, &.errored .warning {
@@ -52,7 +52,7 @@ export const FilterTitle = styled.div`
 `;
 
 const StyledTrashIcon = styled(Icons.Trash)`
-  color: ${({ theme }) => theme.colors.grayscale.light3};
+  color: ${({ theme }) => theme.colorIcon};
 `;
 
 const StyledWarning = styled(Icons.Warning)`

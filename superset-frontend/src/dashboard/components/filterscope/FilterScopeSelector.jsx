@@ -156,7 +156,7 @@ const ScopeSelector = styled.div`
         width: 40%;
         padding: ${theme.sizeUnit * 4}px;
         padding-left: 0;
-        border-right: 1px solid ${theme.colors.grayscale.border};
+        border-right: 1px solid ${theme.colorBorder};
 
         .filter-container label {
           font-weight: ${theme.fontWeightNormal};
@@ -173,7 +173,7 @@ const ScopeSelector = styled.div`
           margin-left: ${theme.sizeUnit * -6}px;
 
           &.is-selected {
-            border: 1px solid ${theme.colors.grayscale.border};
+            border: 1px solid ${theme.colorBorder};
             border-radius: ${theme.borderRadius}px;
             background-color: ${theme.colors.grayscale.bg};
             margin-left: ${theme.sizeUnit * -6}px;
@@ -226,7 +226,7 @@ const ScopeSelector = styled.div`
               height: ${theme.sizeUnit * 4}px;
               border-radius: ${theme.borderRadius}px;
               margin-top: ${theme.sizeUnit * -2}px;
-              box-shadow: inset 0 0 0 2px ${theme.colors.grayscale.border};
+              box-shadow: inset 0 0 0 2px ${theme.colorBorder};
               background: ${theme.colors.grayscale.light3};
             }
           }

@@ -53,7 +53,7 @@ const StyledAceEditor = styled(AceEditor)`
     color: ${theme.colors.grayscale.text};
     && {
       // double class is better than !important
-      border: 1px solid ${theme.colors.grayscale.border};
+      border: 1px solid ${theme.colorBorder};
       font-feature-settings:
         'liga' off,
         'calt' off;

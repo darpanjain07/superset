@@ -139,7 +139,7 @@ const allowedAntdTokens = [
   'colorSuccessText',
   'colorSuccessTextActive',
   'colorSuccessTextHover',
-  'colorBgBase',
+  // 'colorBgBase', antd docs recommend not to use this token as it's used internally
   'colorBgBlur',
   'colorBgContainer',
   'colorBgContainerDisabled',

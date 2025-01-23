@@ -35,7 +35,9 @@ This content is shown when the user clicks "Show more".`;
 
 const ErrorCard: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   const theme = useTheme();
-  return <Card style={{ backgroundColor: theme.colorBgBase }}>{children}</Card>;
+  return (
+    <Card style={{ backgroundColor: theme.colorBgContainer }}>{children}</Card>
+  );
 };
 
 export default {

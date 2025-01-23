@@ -159,7 +159,7 @@ const DashboardContentWrapper = styled.div`
       }
 
       .background--white {
-        background-color: ${theme.colorBgBase};
+        background-color: ${theme.colorBgContainer};
       }
     }
     &.dashboard--editing {
@@ -322,7 +322,7 @@ const StyledDashboardContent = styled.div<{
     .dashboard-component-chart-holder {
       width: 100%;
       height: 100%;
-      background-color: ${theme.colorBgBase};
+      background-color: ${theme.colorBgContainer};
       position: relative;
       padding: ${theme.sizeUnit * 4}px;
       overflow-y: visible;

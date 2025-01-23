@@ -41,7 +41,7 @@ const StyledImage = styled.div`
 
   .default-db-icon {
     font-size: 36px;
-    color: ${({ theme }) => theme.colors.grayscale.base};
+    color: ${({ theme }) => theme.colorIcon};
     margin-right: 0;
     span:first-of-type {
       margin-right: 0;
@@ -86,7 +86,7 @@ const StyledBottom = styled.div`
   padding: ${({ theme }) => theme.sizeUnit * 4}px 0;
   border-radius: 0 0 ${({ theme }) => theme.borderRadius}px
     ${({ theme }) => theme.borderRadius}px;
-  background-color: ${({ theme }) => theme.colors.grayscale.light4};
+  background-color: ${({ theme }) => theme.colorBgContainer};
   width: 100%;
   line-height: 1.5em;
   overflow: hidden;
@@ -125,19 +125,19 @@ const IconButton = styled(
   ),
 )`
   text-transform: none;
-  background-color: ${({ theme }) => theme.colors.grayscale.bg};
+  background-color: ${({ theme }) => theme.colorBgContainer};
   font-weight: ${({ theme }) => theme.fontWeightNormal};
-  color: ${({ theme }) => theme.colors.grayscale.text};
-  border: 1px solid ${({ theme }) => theme.colors.grayscale.border};
+  color: ${({ theme }) => theme.colorText};
+  border: 1px solid ${({ theme }) => theme.colorBorder};
   margin: 0;
   width: 100%;
 
   &:hover,
   &:focus {
-    background-color: ${({ theme }) => theme.colors.grayscale.bgHover};
+    background-color: ${({ theme }) => theme.colorBgTextHover};
     color: ${({ theme }) => theme.colors.grayscale.textHover};
-    border: 1px solid ${({ theme }) => theme.colors.grayscale.borderHover};
-    box-shadow: 4px 4px 10px ${({ theme }) => theme.colors.grayscale.text};
+    border: 1px solid ${({ theme }) => theme.colorBorder};
+    box-shadow: ${({ theme }) => theme.boxShadowSecondary};
   }
 `;
 

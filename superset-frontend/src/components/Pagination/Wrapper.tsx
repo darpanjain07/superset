@@ -40,7 +40,7 @@ const PaginationList = styled.ul`
       padding: 8px 12px;
       text-decoration: none;
       background-color: ${({ theme }) => theme.colors.grayscale.bg};
-      border: 1px solid ${({ theme }) => theme.colors.grayscale.border};
+      border: 1px solid ${({ theme }) => theme.colorBorder};
       border-radius: ${({ theme }) => theme.borderRadius}px;
       color: ${({ theme }) => theme.colors.grayscale.text};
 

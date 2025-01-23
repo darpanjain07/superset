@@ -59,8 +59,8 @@ const StyledDiv = styled.div`
     /* A row within a column has inset hover menu */
     .dragdroppable-column .dragdroppable-row .hover-menu--left {
       left: ${theme.sizeUnit * -3}px;
-      background-color: ${theme.colorBgBase};
-      border: 1px solid ${theme.colors.grayscale.border};
+      background-color: ${theme.colorBgContainer};
+      border: 1px solid ${theme.colorBorder};
     }
 
     .dashboard-component-tabs {
@@ -71,8 +71,8 @@ const StyledDiv = styled.div`
     .dragdroppable-column .dragdroppable-column .hover-menu--top,
     .dashboard-component-tabs .dragdroppable-column .hover-menu--top {
       top: ${theme.sizeUnit * -3}px;
-      background-color: ${theme.colorBgBase};
-      border: 1px solid ${theme.colors.grayscale.border};
+      background-color: ${theme.colorBgContainer};
+      border: 1px solid ${theme.colorBorder};
     }
 
     /* move Tabs hover menu to top near actual Tabs */
