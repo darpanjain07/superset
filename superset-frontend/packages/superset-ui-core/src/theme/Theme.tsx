@@ -508,6 +508,20 @@ export class Theme {
 
   getColorVariants(color: string): ColorVariants {
     const firstLetterCapped = color.charAt(0).toUpperCase() + color.slice(1);
+    if (color === 'default' || color === 'grayscale') {
+      // hack to provide grayscale colors that align with the theme named colors
+      return {
+        active: '#222',
+        textActive: '#444',
+        text: '#555',
+        textHover: '#666',
+        hover: '#888',
+        borderHover: '#AAA',
+        border: '#CCC',
+        bgHover: '#DDD',
+        bg: '#F4F4F4',
+      };
+    }
     return {
       active: this.theme[`color${firstLetterCapped}Active`],
       textActive: this.theme[`color${firstLetterCapped}TextActive`],
