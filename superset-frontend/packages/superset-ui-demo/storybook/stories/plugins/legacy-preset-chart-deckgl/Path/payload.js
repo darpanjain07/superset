@@ -169,7 +169,7 @@ export const payload = theme => ({
         extraProps: { color: theme.colorError },
       },
       {
-        color: theme.colors.success.base,
+        color: theme.colorSuccess,
         path: [
           [-121.900367, 37.701695],
           [-121.928099, 37.699759],
@@ -191,7 +191,7 @@ export const payload = theme => ({
           [-122.469081, 37.706121],
         ],
         __timestamp: null,
-        extraProps: { color: theme.colors.success.base },
+        extraProps: { color: theme.colorSuccess },
       },
       {
         color: theme.colorWarning,

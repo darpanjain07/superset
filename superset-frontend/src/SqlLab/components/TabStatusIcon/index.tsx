@@ -46,7 +46,7 @@ const Circle = styled.div`
     }
 
     &.success {
-      background-color: ${theme.colors.success.base};
+      background-color: ${theme.colorSuccess};
     }
 
     &.failed {

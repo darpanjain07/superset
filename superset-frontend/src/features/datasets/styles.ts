@@ -96,7 +96,7 @@ export const StyledLayoutDatasetPanel = styled.div`
 export const StyledLayoutRightPanel = styled.div`
   ${({ theme }) => `
   border-left: 1px solid ${theme.colors.grayscale.light2};
-  color: ${theme.colors.success.base};
+  color: ${theme.colorSuccess};
   `}
 `;
 

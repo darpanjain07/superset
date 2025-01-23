@@ -57,7 +57,7 @@ const antdPanelStyles = (theme: SupersetTheme) => css`
       width: ${theme.sizeUnit * 4}px;
       height: ${theme.sizeUnit * 4}px;
       margin-left: ${theme.sizeUnit}px;
-      color: ${theme.colors.success.base};
+      color: ${theme.colorSuccess};
     }
   }
 `;

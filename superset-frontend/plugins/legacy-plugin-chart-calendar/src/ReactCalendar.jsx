@@ -172,8 +172,8 @@ export default styled(Calendar)`
     }
 
     .cal-heatmap-container .q4 {
-      background-color: ${theme.colors.success.base};
-      fill: ${theme.colors.success.base};
+      background-color: ${theme.colorSuccess};
+      fill: ${theme.colorSuccess};
     }
 
     .cal-heatmap-container .q5 {

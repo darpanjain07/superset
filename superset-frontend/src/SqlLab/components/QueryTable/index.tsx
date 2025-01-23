@@ -130,10 +130,7 @@ const QueryTable = ({
       success: {
         config: {
           icon: (
-            <Icons.CheckOutlined
-              iconColor={theme.colors.success.base}
-              iconSize="m"
-            />
+            <Icons.CheckOutlined iconColor={theme.colorSuccess} iconSize="m" />
           ),
           // icon: <Icons.Edit iconSize="xl" />,
           label: t('Success'),

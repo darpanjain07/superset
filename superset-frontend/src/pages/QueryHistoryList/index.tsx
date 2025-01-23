@@ -158,9 +158,7 @@ function QueryList({ addDangerToast }: QueryListProps) {
             label: '',
           };
           if (status === QueryState.Success) {
-            statusConfig.name = (
-              <Icons.Check iconColor={theme.colors.success.base} />
-            );
+            statusConfig.name = <Icons.Check iconColor={theme.colorSuccess} />;
             statusConfig.label = t('Success');
           } else if (
             status === QueryState.Failed ||

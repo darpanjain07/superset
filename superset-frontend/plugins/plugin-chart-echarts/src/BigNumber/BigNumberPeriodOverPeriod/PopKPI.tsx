@@ -148,12 +148,12 @@ export default function PopKPI(props: PopKPIProps) {
     if (percentDifferenceNumber > 0) {
       // Positive difference
       return comparisonColorScheme === ColorSchemeEnum.Green
-        ? theme.colors.success.base
+        ? theme.colorSuccess
         : theme.colorError;
     }
     // Negative difference
     return comparisonColorScheme === ColorSchemeEnum.Red
-      ? theme.colors.success.base
+      ? theme.colorSuccess
       : theme.colorError;
   };
 
@@ -178,7 +178,7 @@ export default function PopKPI(props: PopKPIProps) {
       bgColor = useSuccess
         ? theme.colors.success.light2
         : theme.colors.error.light2;
-      txtColor = useSuccess ? theme.colors.success.base : theme.colorError;
+      txtColor = useSuccess ? theme.colorSuccess : theme.colorError;
     }
 
     return {

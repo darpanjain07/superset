@@ -78,7 +78,7 @@ const StyledDiv = styled.div`
     }
 
     .reactable-data tr .true {
-      color: ${theme.colors.success.base};
+      color: ${theme.colorSuccess};
     }
 
     .reactable-data tr .control {

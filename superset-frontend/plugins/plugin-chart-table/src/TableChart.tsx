@@ -823,7 +823,7 @@ export default function TableChart<D extends DataRecord = DataRecord>(
             color: ${basicColorFormatters &&
             basicColorFormatters[row.index][originKey]?.arrowColor ===
               ColorSchemeEnum.Green
-              ? theme.colors.success.base
+              ? theme.colorSuccess
               : theme.colorError};
             margin-right: ${theme.sizeUnit}px;
           `;
@@ -835,7 +835,7 @@ export default function TableChart<D extends DataRecord = DataRecord>(
             arrowStyles = css`
               color: ${basicColorColumnFormatters[row.index][column.key]
                 ?.arrowColor === ColorSchemeEnum.Green
-                ? theme.colors.success.base
+                ? theme.colorSuccess
                 : theme.colorError};
               margin-right: ${theme.sizeUnit}px;
             `;

@@ -163,10 +163,10 @@ export const Table = styled.table`
     }
 
     .table-row-selected {
-      background-color: ${theme.colors.primary.bgHover};
+      background-color: ${theme.colorPrimaryBgHover};
 
       &:hover {
-        background-color: ${theme.colors.primary.bgHover};
+        background-color: ${theme.colorPrimaryBgHover};
       }
     }
 
