@@ -61,7 +61,7 @@ import Field from './Field';
 const DatasourceContainer = styled.div`
   .change-warning {
     margin: 16px 10px 0;
-    color: ${({ theme }) => theme.colors.warning.base};
+    color: ${({ theme }) => theme.colorWarning};
   }
 
   .change-warning .bold {

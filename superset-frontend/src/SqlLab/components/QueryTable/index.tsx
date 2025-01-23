@@ -142,10 +142,7 @@ const QueryTable = ({
       failed: {
         config: {
           icon: (
-            <Icons.CloseOutlined
-              iconColor={theme.colors.error.base}
-              iconSize="m"
-            />
+            <Icons.CloseOutlined iconColor={theme.colorError} iconSize="m" />
           ),
           label: t('Failed'),
         },
@@ -153,10 +150,7 @@ const QueryTable = ({
       stopped: {
         config: {
           icon: (
-            <Icons.CloseOutlined
-              iconColor={theme.colors.error.base}
-              iconSize="m"
-            />
+            <Icons.CloseOutlined iconColor={theme.colorError} iconSize="m" />
           ),
           label: t('Failed'),
         },
@@ -165,7 +159,7 @@ const QueryTable = ({
         config: {
           icon: (
             <Icons.LoadingOutlined
-              iconColor={theme.colors.primary.base}
+              iconColor={theme.colorPrimary}
               iconSize="m"
             />
           ),
@@ -176,7 +170,7 @@ const QueryTable = ({
         config: {
           icon: (
             <Icons.LoadingOutlined
-              iconColor={theme.colors.primary.base}
+              iconColor={theme.colorPrimary}
               iconSize="m"
             />
           ),
@@ -185,9 +179,7 @@ const QueryTable = ({
       },
       timed_out: {
         config: {
-          icon: (
-            <Icons.Clock iconColor={theme.colors.error.base} iconSize="m" />
-          ),
+          icon: <Icons.Clock iconColor={theme.colorError} iconSize="m" />,
           label: t('Offline'),
         },
       },
@@ -195,7 +187,7 @@ const QueryTable = ({
         config: {
           icon: (
             <Icons.LoadingOutlined
-              iconColor={theme.colors.warning.base}
+              iconColor={theme.colorWarning}
               iconSize="m"
             />
           ),
@@ -206,7 +198,7 @@ const QueryTable = ({
         config: {
           icon: (
             <Icons.LoadingOutlined
-              iconColor={theme.colors.warning.base}
+              iconColor={theme.colorWarning}
               iconSize="m"
             />
           ),
@@ -215,9 +207,7 @@ const QueryTable = ({
       },
       error: {
         config: {
-          icon: (
-            <Icons.Error iconColor={theme.colors.error.base} iconSize="m" />
-          ),
+          icon: <Icons.Error iconColor={theme.colorError} iconSize="m" />,
           label: t('Unknown Status'),
         },
       },

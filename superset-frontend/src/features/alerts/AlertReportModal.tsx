@@ -263,7 +263,7 @@ export const StyledInputContainer = styled.div`
 
     .required {
       margin-left: ${theme.sizeUnit / 2}px;
-      color: ${theme.colors.error.base};
+      color: ${theme.colorError};
     }
 
     .input-container {

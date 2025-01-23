@@ -108,7 +108,7 @@ const StyledCancelXIcon = styled(Icons.CancelX)`
 `;
 
 const DropIndicator = styled.div`
-  border: 2px solid ${({ theme }) => theme.colors.primary.base};
+  border: 2px solid ${({ theme }) => theme.colorPrimary};
   width: 5px;
   height: 100%;
   position: absolute;

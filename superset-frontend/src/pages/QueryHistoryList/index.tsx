@@ -80,7 +80,7 @@ interface QueryListProps {
 const StyledTableLabel = styled.div`
   .count {
     margin-left: 5px;
-    color: ${({ theme }) => theme.colors.primary.base};
+    color: ${({ theme }) => theme.colorPrimary};
     text-decoration: underline;
     cursor: pointer;
   }
@@ -170,7 +170,7 @@ function QueryList({ addDangerToast }: QueryListProps) {
               <Icons.XSmall
                 iconColor={
                   status === QueryState.Failed
-                    ? theme.colors.error.base
+                    ? theme.colorError
                     : theme.colors.grayscale.base
                 }
               />
@@ -178,7 +178,7 @@ function QueryList({ addDangerToast }: QueryListProps) {
             statusConfig.label = t('Failed');
           } else if (status === QueryState.Running) {
             statusConfig.name = (
-              <Icons.Running iconColor={theme.colors.primary.base} />
+              <Icons.Running iconColor={theme.colorPrimary} />
             );
             statusConfig.label = t('Running');
           } else if (status === QueryState.TimedOut) {

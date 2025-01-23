@@ -49,7 +49,7 @@ export const Pill = styled.div`
     }
 
     &.has-cross-filters {
-      background: ${theme.colors.primary.base};
+      background: ${theme.colorPrimary};
       &:hover {
         background: ${theme.colors.primary.dark1};
       }

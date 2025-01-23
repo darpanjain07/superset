@@ -47,7 +47,7 @@ const CardContainer = styled.div<{ showThumbnails?: boolean }>`
 const CardWrapper = styled.div`
   border: 2px solid transparent;
   &.card-selected {
-    border: 2px solid ${({ theme }) => theme.colors.primary.base};
+    border: 2px solid ${({ theme }) => theme.colorPrimary};
   }
   &.bulk-select {
     cursor: pointer;

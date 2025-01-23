@@ -182,7 +182,7 @@ const StyledTable = styled(AntTable)<{ height?: number }>(
     }
 
     .ant-pagination-item-active {
-      border-color: ${theme.colors.primary.base};
+      border-color: ${theme.colorPrimary};
     }
 
     .ant-table.ant-table-small {

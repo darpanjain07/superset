@@ -89,7 +89,7 @@ const HeaderStyles = styled.div`
       }
 
       &:hover:after {
-        border: 1px dashed ${theme.colors.primary.base};
+        border: 1px dashed ${theme.colorPrimary};
         z-index: 2;
       }
     }

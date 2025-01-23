@@ -103,9 +103,9 @@ const GridColumnGuide = styled.div`
       position: absolute;
       top: 0;
       min-height: 100%;
-      background-color: ${addAlpha(theme.colors.primary.base, 0.1)};
+      background-color: ${addAlpha(theme.colorPrimary, 0.1)};
       pointer-events: none;
-      box-shadow: inset 0 0 0 1px ${addAlpha(theme.colors.primary.base, 0.6)};
+      box-shadow: inset 0 0 0 1px ${addAlpha(theme.colorPrimary, 0.6)};
     }
   `};
 `;

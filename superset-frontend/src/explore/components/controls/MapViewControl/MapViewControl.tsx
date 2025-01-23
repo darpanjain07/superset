@@ -48,7 +48,7 @@ export const StyledExtentButton = styled(Button)`
     &:hover {
       background-color: ${mix(
         0.1,
-        theme.colors.primary.base,
+        theme.colorPrimary,
         theme.colors.primary.light4,
       )};
       color: ${theme.colors.primary.dark1};

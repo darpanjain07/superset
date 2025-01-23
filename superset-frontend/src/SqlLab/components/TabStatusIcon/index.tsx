@@ -42,7 +42,7 @@ const Circle = styled.div`
     position: relative;
 
     &.running {
-      background-color: ${theme.colors.info.base};
+      background-color: ${theme.colorInfo};
     }
 
     &.success {
@@ -50,7 +50,7 @@ const Circle = styled.div`
     }
 
     &.failed {
-      background-color: ${theme.colors.error.base};
+      background-color: ${theme.colorError};
     }
   `}
 `;

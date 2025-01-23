@@ -51,7 +51,7 @@ const LayerContainer = styled.div`
 
   .required {
     margin-left: ${({ theme }) => theme.sizeUnit / 2}px;
-    color: ${({ theme }) => theme.colors.error.base};
+    color: ${({ theme }) => theme.colorError};
   }
 
   textarea,

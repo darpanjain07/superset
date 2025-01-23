@@ -71,7 +71,7 @@ export const DependencyItem = styled.span`
 
 export const RowTruncationCount = styled.span`
   ${({ theme }) => css`
-    color: ${theme.colors.primary.base};
+    color: ${theme.colorPrimary};
   `}
 `;
 

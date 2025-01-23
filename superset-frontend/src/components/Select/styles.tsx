@@ -125,7 +125,7 @@ export const StyledError = styled.div`
     align-items: flex-start;
     width: 100%;
     padding: ${theme.sizeUnit * 2}px;
-    color: ${theme.colors.error.base};
+    color: ${theme.colorError};
     & svg {
       margin-right: ${theme.sizeUnit * 2}px;
     }

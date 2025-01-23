@@ -70,7 +70,7 @@ export const StyledCloseButton = styled(Button)`
     &:hover {
       background-color: ${mix(
         0.1,
-        theme.colors.primary.base,
+        theme.colorPrimary,
         theme.colors.primary.light4,
       )};
       color: ${theme.colors.primary.dark1};
@@ -109,7 +109,7 @@ export const StyledSaveButton = styled(Button)`
     margin-left: 4px;
     line-height: 1.5715;
     border-radius: ${theme.borderRadius}px;
-    background-color: ${theme.colors.primary.base};
+    background-color: ${theme.colorPrimary};
     color: ${theme.colors.grayscale.light5};
     font-size: ${theme.fontSizeSM}px;
     font-weight: ${theme.fontWeightStrong};

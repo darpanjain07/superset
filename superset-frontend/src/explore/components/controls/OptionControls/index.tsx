@@ -152,7 +152,7 @@ export const DndLabelsContainer = styled.div<{
   &:before {
     display: ${isDragging || isLoading ? 'block' : 'none'};
     background-color: ${
-      canDrop ? theme.colors.primary.base : theme.colors.error.light1
+      canDrop ? theme.colorPrimary : theme.colors.error.light1
     };
     z-index: 10;
     opacity: 10%;
@@ -164,7 +164,7 @@ export const DndLabelsContainer = styled.div<{
   &:after {
     display: ${isLoading || (canDrop && isOver) ? 'block' : 'none'};
     background-color: ${
-      isLoading ? theme.colors.grayscale.light3 : theme.colors.primary.base
+      isLoading ? theme.colors.grayscale.light3 : theme.colorPrimary
     };
     z-index: 11;
     opacity: 35%;

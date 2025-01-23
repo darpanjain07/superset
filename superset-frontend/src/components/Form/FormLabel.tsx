@@ -39,7 +39,7 @@ const RequiredLabel = styled.label`
   &::after {
     display: inline-block;
     margin-left: ${({ theme }) => theme.sizeUnit}px;
-    color: ${({ theme }) => theme.colors.error.base};
+    color: ${({ theme }) => theme.colorError};
     font-size: ${({ theme }) => theme.fontSize}px;
     content: '*';
   }

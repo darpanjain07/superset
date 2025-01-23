@@ -54,7 +54,7 @@ const StyledNotificationMethod = styled.div`
 
       &.error {
         input {
-          border-color: ${theme.colors.error.base};
+          border-color: ${theme.colorError};
         }
       }
 
@@ -474,7 +474,7 @@ export const NotificationMethod: FunctionComponent<NotificationMethodProps> = ({
                   {error && (
                     <div
                       style={{
-                        color: theme.colors.error.base,
+                        color: theme.colorError,
                         fontSize: theme.sizeUnit * 3,
                       }}
                     >

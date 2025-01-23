@@ -96,10 +96,10 @@ const Styles = styled.div`
     }
   }
   i.angle {
-    color: ${({ theme }) => theme.colors.primary.base};
+    color: ${({ theme }) => theme.colorPrimary};
   }
   svg.datasource-modal-trigger {
-    color: ${({ theme }) => theme.colors.primary.base};
+    color: ${({ theme }) => theme.colorPrimary};
     cursor: pointer;
   }
   .title-select {
@@ -120,7 +120,7 @@ const Styles = styled.div`
     color: ${({ theme }) => theme.colors.grayscale.base};
   }
   span[aria-label='more-vert'] {
-    color: ${({ theme }) => theme.colors.primary.base};
+    color: ${({ theme }) => theme.colorPrimary};
   }
 `;
 
@@ -403,7 +403,7 @@ class DatasourceControl extends PureComponent {
           {renderDatasourceTitle(titleText, tooltip)}
           {healthCheckMessage && (
             <Tooltip title={healthCheckMessage}>
-              <Icons.AlertSolid iconColor={theme.colors.warning.base} />
+              <Icons.AlertSolid iconColor={theme.colorWarning} />
             </Tooltip>
           )}
           {extra?.warning_markdown && (

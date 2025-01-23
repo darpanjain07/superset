@@ -87,7 +87,7 @@ const ColumnStyles = styled.div`
     }
     .dashboard--editing .resizable-container--resizing:hover > &:after,
     .dashboard--editing .hover-menu:hover + &:after {
-      border: 1px dashed ${theme.colors.primary.base};
+      border: 1px dashed ${theme.colorPrimary};
       z-index: 2;
     }
 

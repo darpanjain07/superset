@@ -80,9 +80,7 @@ const StyledItem = styled.div<{
     cursor: ${onClick ? 'pointer' : 'default'};
     & .metadata-icon {
       color: ${
-        onClick && collapsed
-          ? theme.colors.primary.base
-          : theme.colors.grayscale.base
+        onClick && collapsed ? theme.colorPrimary : theme.colors.grayscale.base
       };
       padding-right: ${collapsed ? 0 : ICON_PADDING}px;
       & .anticon {

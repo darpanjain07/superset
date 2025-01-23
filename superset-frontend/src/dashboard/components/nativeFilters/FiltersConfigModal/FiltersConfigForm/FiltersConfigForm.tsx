@@ -211,7 +211,7 @@ const DefaultValueContainer = styled.div`
 
 const RefreshIcon = styled(Icons.Refresh)`
   margin-left: ${({ theme }) => theme.sizeUnit * 2}px;
-  color: ${({ theme }) => theme.colors.primary.base};
+  color: ${({ theme }) => theme.colorPrimary};
 `;
 
 const StyledCollapse = styled(Collapse)`
@@ -258,7 +258,7 @@ const StyledTabs = styled(Tabs)`
 `;
 
 const StyledAsterisk = styled.span`
-  color: ${({ theme }) => theme.colors.error.base};
+  color: ${({ theme }) => theme.colorError};
   font-size: ${({ theme }) => theme.fontSizeSM}px;
   margin-left: ${({ theme }) => theme.sizeUnit - 1}px;
   &:before {

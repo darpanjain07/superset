@@ -54,7 +54,7 @@ const WithPopoverMenuStyles = styled.div`
       left: 0;
       width: 100%;
       height: 100%;
-      border: 2px solid ${theme.colors.primary.base};
+      border: 2px solid ${theme.colorPrimary};
       pointer-events: none;
     }
 

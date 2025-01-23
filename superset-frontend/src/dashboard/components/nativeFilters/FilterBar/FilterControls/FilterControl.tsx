@@ -185,7 +185,7 @@ const ToolTipContainer = styled.div`
 const RequiredFieldIndicator = () => (
   <span
     css={(theme: SupersetTheme) => ({
-      color: theme.colors.error.base,
+      color: theme.colorError,
       fontSize: `${theme.fontSizeSM}px`,
       paddingLeft: '1px',
     })}

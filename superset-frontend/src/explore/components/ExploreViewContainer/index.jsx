@@ -153,7 +153,7 @@ const ExplorePanelContainer = styled.div`
       width: ${theme.sizeUnit * 8}px;
     }
     .collapse-icon > svg {
-      color: ${theme.colors.primary.base};
+      color: ${theme.colorPrimary};
     }
   `};
 `;
@@ -628,7 +628,7 @@ function ExploreViewContainer(props) {
             >
               <Icons.Expand
                 className="collapse-icon"
-                iconColor={theme.colors.primary.base}
+                iconColor={theme.colorPrimary}
                 iconSize="l"
               />
             </span>
@@ -654,7 +654,7 @@ function ExploreViewContainer(props) {
               <Tooltip title={t('Open Datasource tab')}>
                 <Icons.Collapse
                   className="collapse-icon"
-                  iconColor={theme.colors.primary.base}
+                  iconColor={theme.colorPrimary}
                   iconSize="l"
                 />
               </Tooltip>

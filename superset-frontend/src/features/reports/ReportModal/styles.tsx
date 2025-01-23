@@ -75,7 +75,7 @@ export const StyledCronPicker = styled(CronPicker)`
 `;
 
 export const StyledCronError = styled.p`
-  color: ${({ theme }) => theme.colors.error.base};
+  color: ${({ theme }) => theme.colorError};
 `;
 
 export const noBottomMargin = css`

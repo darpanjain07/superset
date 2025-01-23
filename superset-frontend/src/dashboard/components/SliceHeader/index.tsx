@@ -57,7 +57,7 @@ const annotationsError = t('One or more annotation layers failed loading.');
 const CrossFilterIcon = styled(Icons.ApartmentOutlined)`
   ${({ theme }) => `
     cursor: default;
-    color: ${theme.colors.primary.base};
+    color: ${theme.colorPrimary};
     line-height: 1.8;
   `}
 `;

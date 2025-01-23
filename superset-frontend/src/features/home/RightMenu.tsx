@@ -104,7 +104,7 @@ const tagStyles = (theme: SupersetTheme) => css`
 
 const styledChildMenu = (theme: SupersetTheme) => css`
   &:hover {
-    color: ${theme.colors.primary.base} !important;
+    color: ${theme.colorPrimary} !important;
     cursor: pointer !important;
   }
 `;
@@ -114,7 +114,7 @@ const { SubMenu } = Menu;
 const StyledSubMenu = styled(SubMenu)`
   &.antd5-menu-submenu-active {
     .antd5-menu-title-content {
-      color: ${({ theme }) => theme.colors.primary.base};
+      color: ${({ theme }) => theme.colorPrimary};
     }
   }
 `;

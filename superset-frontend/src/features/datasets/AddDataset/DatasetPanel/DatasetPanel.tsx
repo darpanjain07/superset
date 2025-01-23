@@ -153,7 +153,7 @@ const TableScrollContainer = styled.div`
 
 const StyledAlert = styled(Alert)`
   ${({ theme }) => `
-  border: 1px solid ${theme.colors.info.base};
+  border: 1px solid ${theme.colorInfo};
   padding: ${theme.sizeUnit * 4}px;
   margin: ${theme.sizeUnit * 6}px ${theme.sizeUnit * 6}px
     ${theme.sizeUnit * 8}px;

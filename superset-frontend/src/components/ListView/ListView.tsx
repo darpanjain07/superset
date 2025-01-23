@@ -100,7 +100,7 @@ const BulkSelectWrapper = styled(Alert)`
     }
 
     .deselect-all, .tag-btn {
-      color: ${theme.colors.primary.base};
+      color: ${theme.colorPrimary};
       margin-left: ${theme.sizeUnit * 4}px;
     }
 

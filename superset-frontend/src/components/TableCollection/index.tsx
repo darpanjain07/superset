@@ -139,7 +139,7 @@ export const Table = styled.table`
 
         &:hover {
           path {
-            fill: ${theme.colors.primary.base};
+            fill: ${theme.colorPrimary};
           }
         }
       }

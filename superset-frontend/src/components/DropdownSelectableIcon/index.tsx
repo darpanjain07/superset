@@ -122,7 +122,7 @@ export default (props: DropDownSelectableProps) => {
           {label}
           {selectedKeys?.includes(key) && (
             <Icons.Check
-              iconColor={theme.colors.primary.base}
+              iconColor={theme.colorPrimary}
               className="tick-menu-item"
               iconSize="xl"
             />
@@ -130,7 +130,7 @@ export default (props: DropDownSelectableProps) => {
         </StyleSubmenuItem>
       </StyleMenuItem>
     ),
-    [selectedKeys, theme.colors.primary.base],
+    [selectedKeys, theme.colorPrimary],
   );
 
   const overlayMenu = useMemo(

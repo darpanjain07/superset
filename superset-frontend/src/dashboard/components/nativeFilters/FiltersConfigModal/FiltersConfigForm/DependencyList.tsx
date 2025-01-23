@@ -46,7 +46,7 @@ const AddFilter = styled.div`
     flex-direction: row;
     align-items: center;
     cursor: pointer;
-    color: ${theme.colors.primary.base};
+    color: ${theme.colorPrimary};
     &:hover {
       color: ${theme.colors.primary.dark1};
     }

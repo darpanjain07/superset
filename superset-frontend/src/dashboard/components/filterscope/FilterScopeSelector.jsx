@@ -136,7 +136,7 @@ const ScopeSelector = styled.div`
       .react-checkbox-tree .rct-icon.rct-icon-collapse-all {
         font-family: ${theme.fontFamily};
         font-size: ${theme.fontSize}px;
-        color: ${theme.colors.primary.base};
+        color: ${theme.colorPrimary};
 
         &::before {
           content: '';
@@ -298,7 +298,7 @@ const ScopeSelector = styled.div`
         outline: none;
 
         &:focus {
-          border: 1px solid ${theme.colors.primary.base};
+          border: 1px solid ${theme.colorPrimary};
         }
       }
     }

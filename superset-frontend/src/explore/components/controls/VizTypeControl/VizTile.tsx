@@ -104,7 +104,7 @@ export const VizTile = ({
             background-color: transparent;
             transition: none;
             &:hover svg path {
-              fill: ${theme.colors.primary.base};
+              fill: ${theme.colorPrimary};
               transition: fill ${theme.motionDurationMid} ease-out;
             }
           `}
@@ -118,7 +118,7 @@ export const VizTile = ({
               background-color ${TILE_TRANSITION_TIME} ease-out;
             cursor: default;
             svg path {
-              fill: ${theme.colors.primary.base};
+              fill: ${theme.colorPrimary};
             }
           `}
         `}

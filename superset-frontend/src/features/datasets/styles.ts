@@ -106,7 +106,7 @@ export const StyledLayoutFooter = styled.div`
   width: 100%;
   border-top: 1px solid ${theme.colors.grayscale.light2};
   border-bottom: 1px solid ${theme.colors.grayscale.light2};
-  color: ${theme.colors.info.base};
+  color: ${theme.colorInfo};
   border-top: ${theme.sizeUnit / 4}px solid
     ${theme.colors.grayscale.light2};
   padding: ${theme.sizeUnit * 4}px;

@@ -384,7 +384,7 @@ const DropdownContainer = forwardRef(
                     count={dropdownTriggerCount ?? overflowingCount}
                     color={
                       (dropdownTriggerCount ?? overflowingCount) > 0
-                        ? theme.colors.primary.base
+                        ? theme.colorPrimary
                         : theme.colors.grayscale.light1
                     }
                     showZero

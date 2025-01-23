@@ -191,11 +191,11 @@ export default styled(Calendar)`
     }
 
     .cal-heatmap-container rect.highlight-now {
-      stroke: ${theme.colors.error.base};
+      stroke: ${theme.colorError};
     }
 
     .cal-heatmap-container text.highlight-now {
-      fill: ${theme.colors.error.base};
+      fill: ${theme.colorError};
       font-weight: ${theme.fontWeightStrong};
     }
 

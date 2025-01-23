@@ -68,7 +68,7 @@ export default function PopoverSection({
         <Icons.Check
           role="img"
           iconColor={
-            isSelected ? theme.colors.primary.base : theme.colors.grayscale.base
+            isSelected ? theme.colorPrimary : theme.colors.grayscale.base
           }
         />
       </div>

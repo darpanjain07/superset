@@ -59,7 +59,7 @@ const alertIconStyles = (theme: SupersetTheme, hasError: boolean) => css`
       &:after {
         content: ' ';
         display: inline-block;
-        background: ${theme.colors.error.base};
+        background: ${theme.colorError};
         mask: url(${errorIcon});
         mask-size: cover;
         width: ${theme.sizeUnit * 4}px;

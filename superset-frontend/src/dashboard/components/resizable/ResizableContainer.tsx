@@ -88,11 +88,11 @@ const StyledResizable = styled(Resizable)`
         left: 0;
         width: 100%;
         height: 100%;
-        box-shadow: inset 0 0 0 2px ${theme.colors.primary.base};
+        box-shadow: inset 0 0 0 2px ${theme.colorPrimary};
       }
 
       & > span .resize-handle {
-        border-color: ${theme.colors.primary.base};
+        border-color: ${theme.colorPrimary};
       }
     }
 

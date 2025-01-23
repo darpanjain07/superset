@@ -38,7 +38,7 @@ function WarningIconWithTooltip({
       title={<SafeMarkdown source={warningMarkdown} />}
     >
       <Icons.AlertSolid
-        iconColor={theme.colors.warning.base}
+        iconColor={theme.colorWarning}
         iconSize={size}
         css={{ marginRight: marginRight ?? theme.sizeUnit * 2 }}
       />

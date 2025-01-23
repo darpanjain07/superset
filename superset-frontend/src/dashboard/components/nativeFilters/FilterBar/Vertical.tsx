@@ -99,7 +99,7 @@ const CollapsedBar = styled.div<{ offset: number }>`
 
 const StyledCollapseIcon = styled(Icons.Collapse)`
   ${({ theme }) => `
-    color: ${theme.colors.primary.base};
+    color: ${theme.colorPrimary};
     margin-bottom: ${theme.sizeUnit * 3}px;
   `}
 `;

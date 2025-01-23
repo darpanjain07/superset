@@ -45,11 +45,11 @@ const MenuDots = styled.div`
   position: relative;
 
   &:hover {
-    background-color: ${({ theme }) => theme.colors.primary.base};
+    background-color: ${({ theme }) => theme.colorPrimary};
 
     &::before,
     &::after {
-      background-color: ${({ theme }) => theme.colors.primary.base};
+      background-color: ${({ theme }) => theme.colorPrimary};
     }
   }
 

@@ -30,7 +30,7 @@ const StyledDiv = styled.div`
   align-items: center;
   color: ${({ theme }) => theme.colors.grayscale.base};
   &:hover {
-    color: ${({ theme }) => theme.colors.primary.base};
+    color: ${({ theme }) => theme.colorPrimary};
   }
 `;
 

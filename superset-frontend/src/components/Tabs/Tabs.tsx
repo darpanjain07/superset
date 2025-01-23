@@ -77,11 +77,11 @@ const StyledTabs = ({
         user-select: none;
         .required {
           margin-left: ${theme.sizeUnit / 2}px;
-          color: ${theme.colors.error.base};
+          color: ${theme.colorError};
         }
       }
       .ant-tabs-ink-bar {
-        background: ${theme.colors.primary.base};
+        background: ${theme.colorPrimary};
       }
     `}
   />

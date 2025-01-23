@@ -189,7 +189,7 @@ export const antdWarningAlertStyles = (theme: SupersetTheme) => css`
 export const formHelperStyles = (theme: SupersetTheme) => css`
   .required {
     margin-left: ${theme.sizeUnit / 2}px;
-    color: ${theme.colors.error.base};
+    color: ${theme.colorError};
   }
 
   .helper {

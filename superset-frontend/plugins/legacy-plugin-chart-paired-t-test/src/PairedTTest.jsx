@@ -74,7 +74,7 @@ const StyledDiv = styled.div`
     }
 
     .reactable-data tr .false {
-      color: ${theme.colors.error.base};
+      color: ${theme.colorError};
     }
 
     .reactable-data tr .true {
@@ -82,11 +82,11 @@ const StyledDiv = styled.div`
     }
 
     .reactable-data tr .control {
-      color: ${theme.colors.primary.base};
+      color: ${theme.colorPrimary};
     }
 
     .reactable-data tr .invalid {
-      color: ${theme.colors.warning.base};
+      color: ${theme.colorWarning};
     }
 
     .reactable-data .control td {

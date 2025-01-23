@@ -62,7 +62,7 @@ const StyledMenuItem = styled(AntdMenu.Item)`
         opacity: 0;
         transform: translateX(-50%);
         transition: all ${({ theme }) => theme.motionDurationMid};
-        background-color: ${({ theme }) => theme.colors.primary.base};
+        background-color: ${({ theme }) => theme.colorPrimary};
       }
       &:focus {
         @media (max-width: 767px) {
@@ -117,7 +117,7 @@ const StyledNav = styled(AntdMenu)`
   }
   &.antd5-menu-horizontal > .antd5-menu-item-selected {
     box-sizing: border-box;
-    border-bottom: 2px solid ${({ theme }) => theme.colors.primary.base};
+    border-bottom: 2px solid ${({ theme }) => theme.colorPrimary};
   }
 `;
 

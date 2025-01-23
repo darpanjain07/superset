@@ -25,7 +25,7 @@ const ChartIcon = styled(Icons.BarChartOutlined)`
   ${({ theme }) => `
     position: relative;
     top: ${theme.sizeUnit - 1}px;
-    color: ${theme.colors.primary.base};
+    color: ${theme.colorPrimary};
     margin-right: ${theme.sizeUnit * 2}px;
   `}
 `;

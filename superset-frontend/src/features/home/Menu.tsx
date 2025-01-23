@@ -122,7 +122,7 @@ const { SubMenu } = MainNav;
 const StyledSubMenu = styled(SubMenu)`
   &.antd5-menu-submenu-active {
     .antd5-menu-title-content {
-      color: ${({ theme }) => theme.colors.primary.base};
+      color: ${({ theme }) => theme.colorPrimary};
     }
   }
 `;

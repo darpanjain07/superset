@@ -46,7 +46,7 @@ export const FilterTitle = styled.div`
         }
       }
       &.errored div, &.errored .warning {
-        color: ${theme.colors.error.base};
+        color: ${theme.colorError};
       }
   `}
 `;
@@ -56,7 +56,7 @@ const StyledTrashIcon = styled(Icons.Trash)`
 `;
 
 const StyledWarning = styled(Icons.Warning)`
-  color: ${({ theme }) => theme.colors.error.base};
+  color: ${({ theme }) => theme.colorError};
   &.anticon {
     margin-left: auto;
   }

@@ -149,12 +149,12 @@ export default function PopKPI(props: PopKPIProps) {
       // Positive difference
       return comparisonColorScheme === ColorSchemeEnum.Green
         ? theme.colors.success.base
-        : theme.colors.error.base;
+        : theme.colorError;
     }
     // Negative difference
     return comparisonColorScheme === ColorSchemeEnum.Red
       ? theme.colors.success.base
-      : theme.colors.error.base;
+      : theme.colorError;
   };
 
   const arrowIndicatorStyle = css`
@@ -178,9 +178,7 @@ export default function PopKPI(props: PopKPIProps) {
       bgColor = useSuccess
         ? theme.colors.success.light2
         : theme.colors.error.light2;
-      txtColor = useSuccess
-        ? theme.colors.success.base
-        : theme.colors.error.base;
+      txtColor = useSuccess ? theme.colors.success.base : theme.colorError;
     }
 
     return {

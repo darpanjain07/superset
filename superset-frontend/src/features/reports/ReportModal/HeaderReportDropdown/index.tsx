@@ -52,7 +52,7 @@ import { MenuItemWithCheckboxContainer } from 'src/explore/components/useExplore
 const extensionsRegistry = getExtensionsRegistry();
 
 const deleteColor = (theme: SupersetTheme) => css`
-  color: ${theme.colors.error.base};
+  color: ${theme.colorError};
 `;
 
 const onMenuHover = (theme: SupersetTheme) => css`

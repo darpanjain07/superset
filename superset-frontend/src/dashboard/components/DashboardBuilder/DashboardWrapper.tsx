@@ -102,11 +102,11 @@ const StyledDiv = styled.div`
     }
 
     i.danger {
-      color: ${theme.colors.error.base};
+      color: ${theme.colorError};
     }
 
     i.warning {
-      color: ${theme.colors.warning.base};
+      color: ${theme.colorWarning};
     }
   `}
 `;

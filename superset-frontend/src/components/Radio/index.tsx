@@ -32,7 +32,7 @@ const StyledRadio = styled(AntdRadio)`
   .ant-radio.ant-radio-checked {
     .ant-radio-inner {
       border-width: ${({ theme }) => theme.sizeUnit + 1}px;
-      border-color: ${({ theme }) => theme.colors.primary.base};
+      border-color: ${({ theme }) => theme.colorPrimary};
     }
 
     .ant-radio-inner::after {

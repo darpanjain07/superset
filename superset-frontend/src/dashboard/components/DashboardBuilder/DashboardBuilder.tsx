@@ -178,7 +178,7 @@ const DashboardContentWrapper = styled.div`
 
       .grid-row.grid-row--hovered:after,
       .dashboard-component-tabs > .grid-row--hovered:after {
-        border: 2px dashed ${theme.colors.primary.base};
+        border: 2px dashed ${theme.colorPrimary};
       }
 
       .resizable-container {
@@ -203,7 +203,7 @@ const DashboardContentWrapper = styled.div`
         &:hover,
         &.resizable-container--resizing:hover {
           & > .dashboard-component-chart-holder:after {
-            border: 1px dashed ${theme.colors.primary.base};
+            border: 1px dashed ${theme.colorPrimary};
           }
         }
       }
@@ -211,7 +211,7 @@ const DashboardContentWrapper = styled.div`
       .resizable-container--resizing:hover > .grid-row:after,
       .hover-menu:hover + .grid-row:after,
       .dashboard-component-tabs > .hover-menu:hover + div:after {
-        border: 1px dashed ${theme.colors.primary.base};
+        border: 1px dashed ${theme.colorPrimary};
         z-index: 2;
       }
 
@@ -241,7 +241,7 @@ const DashboardContentWrapper = styled.div`
         }
 
         &:hover:after {
-          border: 1px dashed ${theme.colors.primary.base};
+          border: 1px dashed ${theme.colorPrimary};
           z-index: 2;
         }
       }
@@ -336,8 +336,8 @@ const StyledDashboardContent = styled.div<{
       &.fade-in {
         border-radius: ${theme.borderRadius}px;
         box-shadow:
-          inset 0 0 0 2px ${theme.colors.primary.base},
-          0 0 0 3px ${addAlpha(theme.colors.primary.base, 0.1)};
+          inset 0 0 0 2px ${theme.colorPrimary},
+          0 0 0 3px ${addAlpha(theme.colorPrimary, 0.1)};
       }
 
       &.fade-out {

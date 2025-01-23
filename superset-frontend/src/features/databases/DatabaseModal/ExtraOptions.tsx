@@ -342,7 +342,7 @@ const ExtraOptions = ({
             />
             {isAllowRunAsyncDisabled && (
               <InfoTooltip
-                iconStyle={{ color: theme.colors.error.base }}
+                iconStyle={{ color: theme.colorError }}
                 tooltip={t(
                   'This option has been disabled by the administrator.',
                 )}

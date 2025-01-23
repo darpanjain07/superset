@@ -35,7 +35,7 @@ export const StyledTooltip = styled(IconTooltip)`
   span {
     color: ${({ theme }) => theme.colors.grayscale.base};
     &: hover {
-      color: ${({ theme }) => theme.colors.primary.base};
+      color: ${({ theme }) => theme.colorPrimary};
     }
   }
 `;

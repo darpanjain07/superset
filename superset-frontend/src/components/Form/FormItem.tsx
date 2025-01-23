@@ -33,7 +33,7 @@ const StyledItem = styled(Form.Item)`
           }
           &::after {
             display: inline-block;
-            color: ${theme.colors.error.base};
+            color: ${theme.colorError};
             font-size: ${theme.fontSizeSM}px;
             content: '*';
           }

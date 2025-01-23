@@ -326,22 +326,24 @@ export type SharedAntdTokens = Pick<AntdTokens, AllowedAntdTokenKeys>;
 
 export type SupersetTheme = LegacySupersetTheme & SharedAntdTokens;
 
-const DEFAULT_SYSTEM_COLORS = {
-  colorPrimary: '#20a7c9',
-  colorError: '#e04355',
-  colorWarning: '#fcc700',
-  colorSuccess: '#5ac189',
-  colorInfo: '#66bcfe',
-};
-
 export class Theme {
   theme: SupersetTheme;
 
   private static readonly defaultTokens = {
+    // Default colors
+    colorPrimary: '#20a7c9',
+    colorError: '#e04355',
+    colorWarning: '#fcc700',
+    colorSuccess: '#5ac189',
+    colorInfo: '#66bcfe',
+
+    // Forcing some default tokens
+    fontFamily: `'Inter', Helvetica, Arial`,
+    fontFamilyCode: `'Fira Code', 'Courier New', monospace`,
+
+    // Extra tokens
     transitionTiming: 0.3,
     brandIconMaxWidth: 37,
-
-    // Extra things
     fontSizeXS: '8',
     fontSizeXXL: '28',
     fontWeightNormal: '400',
@@ -421,16 +423,13 @@ export class Theme {
     seed: Partial<SupersetTheme>,
   ): Partial<SupersetTheme> {
     return {
-      fontFamily: `'Inter', Helvetica, Arial`,
-      fontFamilyCode: `'Fira Code', 'Courier New', monospace`,
-      ...DEFAULT_SYSTEM_COLORS,
+      ...Theme.defaultTokens,
       ...seed,
     };
   }
 
   private static getSystemColors(antdTokens: SharedAntdTokens): SystemColors {
     return {
-      ...DEFAULT_SYSTEM_COLORS,
       colorPrimary: antdTokens.colorPrimary,
       colorError: antdTokens.colorError,
       colorWarning: antdTokens.colorWarning,
