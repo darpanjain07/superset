@@ -37,7 +37,7 @@ const StyledTooltip = (props: any) => {
                 background: transparent;
                 border: none;
                 text-align: left;
-                color: ${theme.colors.grayscale.light5};
+                color: ${theme.colorBgLayout};
                 font-size: ${theme.fontSizeXS}px;
               }
             }

@@ -40,7 +40,7 @@ const SaveDatasetActionButton = ({
     &.ant-dropdown-button button.ant-btn.ant-btn-default {
       font-weight: ${theme.sizeUnit * 150};
       background-color: ${theme.colors.primary.light4};
-      color: ${theme.colors.primary.text};
+      color: ${theme.colorPrimaryText};
       &:nth-of-type(2) {
         &:before,
         &:hover:before {
@@ -50,7 +50,7 @@ const SaveDatasetActionButton = ({
     }
     span[name='caret-down'] {
       margin-left: ${theme.sizeUnit * 1}px;
-      color: ${theme.colors.primary.text};
+      color: ${theme.colorPrimaryText};
     }
   `;
 

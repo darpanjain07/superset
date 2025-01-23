@@ -53,7 +53,7 @@ const AlertContainer = styled.div`
       color: inherit;
       text-decoration: underline;
       &:hover {
-        color: ${theme.colors.info.text};
+        color: ${theme.colorInfoText};
       }
     }
 
@@ -62,12 +62,12 @@ const AlertContainer = styled.div`
       background-color: ${theme.colors.error.bg};
 
       p {
-        color: ${theme.colors.error.text};
+        color: ${theme.colorErrorText};
       }
 
       & a:hover,
       & span[role='button']:hover {
-        color: ${theme.colors.error.text};
+        color: ${theme.colorErrorText};
       }
     }
   `}

@@ -88,7 +88,7 @@ const StyledTooltipItem = styled.div`
 const StyledPlus = styled.span`
   ${({ theme }) => `
   cursor: pointer;
-  color: ${theme.colors.primary.text};
+  color: ${theme.colorPrimaryText};
   font-weight: ${theme.fontWeightNormal};
   `}
 `;

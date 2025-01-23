@@ -32,7 +32,7 @@ export const useJsonTreeTheme = () => {
     base07: theme.colors.grayscale.base,
     base08: theme.colorError,
     base09: theme.colors.error.hover,
-    base0A: theme.colors.error.text,
+    base0A: theme.colorErrorText,
     base0B: theme.colorSuccess,
     base0C: theme.colorPrimaryBgHover,
     base0D: theme.colorPrimary,

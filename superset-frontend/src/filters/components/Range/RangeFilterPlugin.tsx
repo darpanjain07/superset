@@ -39,9 +39,7 @@ const StyledMinSlider = styled(AntdSlider)<{
   ${({ theme, validateStatus }) => `
   .ant-slider-rail {
     background-color: ${
-      validateStatus
-        ? theme.colors[validateStatus]?.text
-        : theme.colors.info.text
+      validateStatus ? theme.colors[validateStatus]?.text : theme.colorInfoText
     };
   }
 

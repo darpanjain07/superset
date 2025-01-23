@@ -157,7 +157,7 @@ export const StyledModal = styled(BaseModal)<StyledModalProps>`
     .close {
       flex: 1 1 auto;
       margin-bottom: ${({ theme }) => theme.sizeUnit}px;
-      color: ${({ theme }) => theme.colors.primary.text};
+      color: ${({ theme }) => theme.colorPrimaryText};
       font-size: 32px;
       font-weight: ${({ theme }) => theme.fontWeightLight};
     }

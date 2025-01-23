@@ -38,7 +38,7 @@ const LimitSelectStyled = styled.span`
   ${({ theme }) => `
     .ant-dropdown-trigger {
       align-items: center;
-      color: ${theme.colors.grayscale.dark2};
+      color: ${theme.colorIcon};
       display: flex;
       font-size: 12px;
       margin-right: ${theme.sizeUnit * 2}px;

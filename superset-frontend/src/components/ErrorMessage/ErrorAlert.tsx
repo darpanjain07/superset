@@ -63,7 +63,7 @@ const ErrorAlert: React.FC<ErrorAlertProps> = ({
     const icon =
       type === 'warning' ? <WarningOutlined /> : <ExclamationCircleOutlined />;
     const color =
-      type === 'warning' ? theme.colors.warning.text : theme.colors.error.text;
+      type === 'warning' ? theme.colors.warning.text : theme.colorErrorText;
     return (
       <div style={{ cursor: 'pointer' }}>
         <span style={{ color }}>{icon} </span>

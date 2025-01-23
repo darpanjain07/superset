@@ -150,9 +150,7 @@ const RunQueryActionButton = ({
               icon: (
                 <Icons.CaretDown
                   iconColor={
-                    isDisabled
-                      ? theme.colors.grayscale.base
-                      : theme.colors.grayscale.light5
+                    isDisabled ? theme.colorTextDisabled : theme.colorIcon
                   }
                   name="caret-down"
                 />

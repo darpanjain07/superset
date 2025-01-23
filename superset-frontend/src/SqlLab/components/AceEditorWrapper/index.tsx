@@ -73,7 +73,7 @@ const StyledAceEditor = styled(AceEditor)`
       }
 
       .ace_cursor {
-        color: ${theme.colors.primary.text};
+        color: ${theme.colorPrimaryText};
       }
 
       .ace_marker-layer .ace_active-line {
@@ -235,7 +235,7 @@ const AceEditorWrapper = ({
           }
 
           .ace_scroller {
-            background-color: ${theme.colors.grayscale.light4};
+            background-color: ${theme.colorBgLayout};
           }
         `}
       />

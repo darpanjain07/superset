@@ -134,7 +134,7 @@ const scheduledQueriesConf = bootstrapData?.common?.conf?.SCHEDULED_QUERIES;
 
 const StyledToolbar = styled.div`
   padding: ${({ theme }) => theme.sizeUnit * 2}px;
-  background: ${({ theme }) => theme.colors.grayscale.light5};
+  background: ${({ theme }) => theme.colorBgLayout};
   display: flex;
   justify-content: space-between;
   border: 1px solid ${({ theme }) => theme.colorBorder};
@@ -169,8 +169,7 @@ const StyledSidebar = styled.div<{ width: number; hide: boolean | undefined }>`
   width: ${({ width }) => width}px;
   padding: ${({ theme, hide }) => (hide ? 0 : theme.sizeUnit * 2.5)}px;
   border-right: 1px solid
-    ${({ theme, hide }) =>
-      hide ? 'transparent' : theme.colors.grayscale.light2};
+    ${({ theme, hide }) => (hide ? 'transparent' : theme.colorBorder)};
 `;
 
 const StyledSqlEditor = styled.div`
@@ -217,8 +216,8 @@ const StyledSqlEditor = styled.div`
     }
 
     .gutter {
-      border-top: 1px solid ${theme.colors.grayscale.light2};
-      border-bottom: 1px solid ${theme.colors.grayscale.light2};
+      border-top: 1px solid ${theme.colorBorder};
+      border-bottom: 1px solid ${theme.colorBorder};
       width: 3%;
       margin: ${SQL_EDITOR_GUTTER_MARGIN}px 47%;
     }
@@ -861,7 +860,7 @@ const SqlEditor: FC<Props> = ({
                 <ShareSqlLabQuery queryEditorId={queryEditor.id} />
               </span>
               <AntdDropdown overlay={renderDropdown()} trigger={['click']}>
-                <Icons.MoreHoriz iconColor={theme.colors.grayscale.base} />
+                <Icons.MoreHoriz iconColor={theme.colorIcon} />
               </AntdDropdown>
             </div>
           </>
