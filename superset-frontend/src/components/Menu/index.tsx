@@ -41,7 +41,6 @@ export type AntdMenuItemType = ReactElement & {
 export type MenuItemChildType = AntdMenuItemType;
 
 const StyledMenuItem = styled(AntdMenu.Item)`
-  line-height: 1.6;
   a {
     text-decoration: none;
   }
@@ -99,6 +98,7 @@ const StyledNav = styled(AntdMenu)`
   height: 100%;
   gap: 0;
   &.antd5-menu-horizontal > .antd5-menu-item {
+    line-height: 1.4;
     height: 100%;
     display: flex;
     align-items: center;
