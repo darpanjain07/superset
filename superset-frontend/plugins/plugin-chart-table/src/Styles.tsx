@@ -36,15 +36,15 @@ export default styled.div`
     thead > tr > th {
       padding-right: 0;
       position: relative;
-      background: ${theme.colors.grayscale.light5};
+      background: ${theme.colorBgLayout};
       text-align: left;
     }
     th svg {
-      color: ${theme.colors.grayscale.light2};
+      color: ${theme.colorIcon};
       margin: ${theme.sizeUnit / 2}px;
     }
     th.is-sorted svg {
-      color: ${theme.colors.grayscale.base};
+      color: ${theme.colorText};
     }
     .table > tbody > tr:first-of-type > td,
     .table > tbody > tr:first-of-type > th {
@@ -65,7 +65,7 @@ export default styled.div`
       font-weight: ${theme.fontWeightStrong};
     }
     .dt-is-null {
-      color: ${theme.colors.grayscale.light1};
+      color: ${theme.colorTextTertiary};
     }
     td.dt-is-filter {
       cursor: pointer;
@@ -104,7 +104,7 @@ export default styled.div`
 
     .pagination > li > span.dt-pagination-ellipsis:focus,
     .pagination > li > span.dt-pagination-ellipsis:hover {
-      background: ${theme.colors.grayscale.light5};
+      background: ${theme.colorBgLayout};
     }
 
     .dt-no-results {
@@ -113,7 +113,7 @@ export default styled.div`
     }
 
     .right-border-only {
-      border-right: 2px solid ${theme.colors.grayscale.light2};
+      border-right: 2px solid ${theme.colorBorder};
     }
     table .right-border-only:last-child {
       border-right: none;
