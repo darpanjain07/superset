@@ -53,7 +53,7 @@ export default styled(Partition)`
 
     .superset-legacy-chart-partition g text {
       font-weight: ${theme.fontWeightStrong};
-      fill: ${theme.colors.grayscale.dark1};
+      fill: ${theme.colorText};
     }
 
     .superset-legacy-chart-partition g:hover text {

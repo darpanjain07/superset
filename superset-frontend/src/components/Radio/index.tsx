@@ -47,7 +47,7 @@ const StyledRadio = styled(AntdRadio)`
   .ant-radio:hover,
   .ant-radio:focus {
     .ant-radio-inner {
-      border-color: ${({ theme }) => theme.colors.primary.dark1};
+      border-color: ${({ theme }) => theme.colorPrimaryText};
     }
   }
 `;

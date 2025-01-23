@@ -110,7 +110,7 @@ const ChartSelect = ({
       >
         <InfoText
           css={css`
-            color: ${theme.colors.grayscale.dark1};
+            color: ${theme.colorText};
             margin-right: ${theme.sizeUnit}px;
             margin-bottom: 0;
           `}

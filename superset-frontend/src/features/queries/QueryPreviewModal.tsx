@@ -50,7 +50,7 @@ const TabButton = styled.div`
   padding: ${({ theme }) => theme.sizeUnit * 2}px
     ${({ theme }) => theme.sizeUnit * 4}px;
   margin-right: ${({ theme }) => theme.sizeUnit * 4}px;
-  color: ${({ theme }) => theme.colors.primary.dark1};
+  color: ${({ theme }) => theme.colorPrimaryText};
 
   &.active,
   &:focus,

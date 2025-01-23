@@ -96,7 +96,7 @@ const ConfirmModalStyled = styled.div`
 
 const StyledSpan = styled.span`
   cursor: pointer;
-  color: ${({ theme }) => theme.colors.primary.dark1};
+  color: ${({ theme }) => theme.colorPrimaryText};
   &: hover {
     color: ${({ theme }) => theme.colors.primary.dark2};
   }

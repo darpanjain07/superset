@@ -48,7 +48,7 @@ const containerStyle = (theme: SupersetTheme) => css`
     color: ${theme.colors.grayscale.base};
     margin-left: 0;
     &:hover {
-      color: ${theme.colors.primary.dark1};
+      color: ${theme.colorPrimaryText};
     }
 
     &[disabled],

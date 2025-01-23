@@ -182,12 +182,12 @@ export default styled(Calendar)`
     }
 
     .cal-heatmap-container rect.highlight {
-      stroke: ${theme.colors.grayscale.dark1};
+      stroke: ${theme.colorText};
       stroke-width: 1;
     }
 
     .cal-heatmap-container text.highlight {
-      fill: ${theme.colors.grayscale.dark1};
+      fill: ${theme.colorText};
     }
 
     .cal-heatmap-container rect.highlight-now {
@@ -206,7 +206,7 @@ export default styled(Calendar)`
 
     .ch-tooltip {
       padding: ${theme.sizeUnit * 2}px;
-      background: ${theme.colors.grayscale.dark1};
+      background: ${theme.colorText};
       color: ${theme.colors.grayscale.light1};
       font-size: ${theme.fontSizeSM}px;
       line-height: 1.4;
@@ -233,7 +233,7 @@ export default styled(Calendar)`
       left: 50%;
       margin-left: -${theme.sizeUnit}px;
       border-width: ${theme.sizeUnit}px ${theme.sizeUnit}px 0;
-      border-top-color: ${theme.colors.grayscale.dark1};
+      border-top-color: ${theme.colorText};
     }
   `}
 `;

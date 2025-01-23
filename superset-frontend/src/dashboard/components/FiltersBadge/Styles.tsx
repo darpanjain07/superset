@@ -45,13 +45,13 @@ export const Pill = styled.div`
 
     &:hover {
       cursor: pointer;
-      background: ${theme.colors.grayscale.dark1};
+      background: ${theme.colorText};
     }
 
     &.has-cross-filters {
       background: ${theme.colorPrimary};
       &:hover {
-        background: ${theme.colors.primary.dark1};
+        background: ${theme.colorPrimaryText};
       }
     }
   `}

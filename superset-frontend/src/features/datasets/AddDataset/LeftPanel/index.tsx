@@ -80,7 +80,7 @@ const LeftPanelStyle = styled.div`
         cursor: pointer;
         padding: ${theme.sizeUnit * 1.75}px;
         border-radius: ${theme.borderRadius}px;
-        background-color: ${theme.colors.primary.dark1};
+        background-color: ${theme.colorPrimaryText};
         color: ${theme.colors.grayscale.light5};
       }
 

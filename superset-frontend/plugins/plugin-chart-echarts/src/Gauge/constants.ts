@@ -33,7 +33,7 @@ export const defaultGaugeSeriesOption = (
     },
   },
   axisLabel: {
-    color: theme.colors.grayscale.dark1,
+    color: theme.colorText,
   },
   axisTick: {
     lineStyle: {

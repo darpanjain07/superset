@@ -120,9 +120,9 @@ const SliceAddedBadgePlaceholder: FC<{
     ref={placeholderRef}
     css={(theme: Theme) => css`
       /* Display styles */
-      border: 1px solid ${theme.colors.primary.dark1};
+      border: 1px solid ${theme.colorPrimaryText};
       border-radius: ${theme.sizeUnit}px;
-      color: ${theme.colors.primary.dark1};
+      color: ${theme.colorPrimaryText};
       font-size: ${theme.fontSizeXS}px;
       letter-spacing: 0.02em;
       padding: ${theme.sizeUnit / 2}px ${theme.sizeUnit * 2}px;
@@ -146,9 +146,9 @@ const SliceAddedBadge: FC<{ placeholder?: HTMLDivElement }> = ({
   <div
     css={(theme: Theme) => css`
       /* Display styles */
-      border: 1px solid ${theme.colors.primary.dark1};
+      border: 1px solid ${theme.colorPrimaryText};
       border-radius: ${theme.sizeUnit}px;
-      color: ${theme.colors.primary.dark1};
+      color: ${theme.colorPrimaryText};
       font-size: ${theme.fontSizeXS}px;
       letter-spacing: 0.02em;
       padding: ${theme.sizeUnit / 2}px ${theme.sizeUnit * 2}px;
@@ -210,7 +210,7 @@ const AddSliceCard: FC<{
           white-space: nowrap;
           overflow: hidden;
           line-height: 1.3;
-          color: ${theme.colors.grayscale.dark1};
+          color: ${theme.colorText};
 
           &:hover {
             //background: ${theme.colors.grayscale.light4};

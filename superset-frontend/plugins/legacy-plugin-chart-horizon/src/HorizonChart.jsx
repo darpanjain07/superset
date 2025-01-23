@@ -73,7 +73,7 @@ const StyledDiv = styled.div`
 
     .superset-legacy-chart-horizon .horizon-row span.title {
       position: absolute;
-      color: ${theme.colors.grayscale.dark1};
+      color: ${theme.colorText};
       font-size: ${theme.fontSizeSM}px;
       margin: 0;
     }

@@ -120,7 +120,7 @@ export const focusStyle = (theme: SupersetTheme) => css`
   .superset-button.ant-dropdown-trigger,
   .header-controls span {
     &:focus-visible {
-      box-shadow: 0 0 0 2px ${theme.colors.primary.dark1};
+      box-shadow: 0 0 0 2px ${theme.colorPrimaryText};
       border-radius: ${theme.sizeUnit / 2}px;
       outline: none;
       text-decoration: none;

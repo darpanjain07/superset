@@ -71,14 +71,14 @@ const StyledHeader = styled.header`
           border-color: transparent;
         }
         &:focus-visible {
-          border-color: ${theme.colors.primary.dark1};
+          border-color: ${theme.colorPrimaryText};
         }
       }
       .navbar-brand-text {
         border-left: 1px solid ${theme.colors.grayscale.light2};
         border-right: 1px solid ${theme.colors.grayscale.light2};
         height: 100%;
-        color: ${theme.colors.grayscale.dark1};
+        color: ${theme.colorText};
         padding-left: ${theme.sizeUnit * 4}px;
         padding-right: ${theme.sizeUnit * 4}px;
         margin-right: ${theme.sizeUnit * 6}px;

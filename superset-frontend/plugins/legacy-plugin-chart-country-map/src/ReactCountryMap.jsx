@@ -52,7 +52,7 @@ export default styled(CountryMap)`
     }
 
     .superset-legacy-chart-country-map .text-layer {
-      color: ${theme.colors.grayscale.dark1};
+      color: ${theme.colorText};
       text-anchor: middle;
       pointer-events: none;
     }

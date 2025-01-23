@@ -63,9 +63,7 @@ const LabelContainer = styled.div<{
     }
 
     .date-label-content {
-      color: ${isPlaceholder
-        ? theme.colors.grayscale.light1
-        : theme.colors.grayscale.dark1};
+      color: ${isPlaceholder ? theme.colors.grayscale.light1 : theme.colorText};
       overflow: hidden;
       text-overflow: ellipsis;
       min-width: 0;

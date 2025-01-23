@@ -77,7 +77,7 @@ const StyledMenu = styled(Menu)`
       }px ${theme.sizeUnit * 3}px;
     }
     .ant-dropdown-menu-item-selected {
-      color: ${theme.colors.grayscale.dark1};
+      color: ${theme.colorText};
       background-color: ${theme.colors.primary.light5};
     }
   `}

@@ -65,7 +65,7 @@ const Button = styled.button`
   background: none;
   border: none;
   text-decoration: underline;
-  color: ${({ theme }) => theme.colors.primary.dark1};
+  color: ${({ theme }) => theme.colorPrimaryText};
 `;
 
 const ButtonContainer = styled.div`

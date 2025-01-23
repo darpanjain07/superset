@@ -33,7 +33,7 @@ export const StyledExtentButton = styled(Button)`
     line-height: 1.5715;
     border-radius: ${theme.borderRadius}px;
     background-color: ${theme.colors.primary.light4};
-    color: ${theme.colors.primary.dark1};
+    color: ${theme.colorPrimaryText};
     font-size: ${theme.fontSizeSM}px;
     font-weight: ${theme.fontWeightStrong};
     text-transform: uppercase;
@@ -51,7 +51,7 @@ export const StyledExtentButton = styled(Button)`
         theme.colorPrimary,
         theme.colors.primary.light4,
       )};
-      color: ${theme.colors.primary.dark1};
+      color: ${theme.colorPrimaryText};
     }
   `}
 `;

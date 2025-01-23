@@ -64,7 +64,7 @@ const HorizontalDivider = ({ title, description }: FilterDividerProps) => {
             font-size: ${theme.fontSize}px;
             font-weight: ${theme.fontWeightNormal};
             margin: 0;
-            color: ${theme.colors.grayscale.dark1};
+            color: ${theme.colorText};
           `}
         >
           {title}
@@ -113,7 +113,7 @@ const HorizontalOverflowDivider = ({
           css={css`
             ${truncationCSS};
             display: block;
-            color: ${theme.colors.grayscale.dark1};
+            color: ${theme.colorText};
             font-weight: ${theme.fontWeightNormal};
             font-size: ${theme.fontSize}px;
             margin: 0 0 ${theme.sizeUnit}px 0;

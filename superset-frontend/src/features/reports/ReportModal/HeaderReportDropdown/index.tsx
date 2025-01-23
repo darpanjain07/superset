@@ -61,7 +61,7 @@ const onMenuHover = (theme: SupersetTheme) => css`
     margin-top: 0px;
     margin-bottom: 4px;
     :hover {
-      color: ${theme.colors.grayscale.dark1};
+      color: ${theme.colorText};
     }
   }
   :hover {
@@ -71,7 +71,7 @@ const onMenuHover = (theme: SupersetTheme) => css`
 
 const onMenuItemHover = (theme: SupersetTheme) => css`
   &:hover {
-    color: ${theme.colors.grayscale.dark1};
+    color: ${theme.colorText};
     background-color: ${theme.colors.primary.bg};
   }
 `;

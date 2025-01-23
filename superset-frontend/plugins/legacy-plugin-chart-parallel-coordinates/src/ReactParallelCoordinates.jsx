@@ -74,7 +74,7 @@ export default styled(ParallelCoordinates)`
     .parcoords .axis line,
     .parcoords .axis path {
       fill: none;
-      stroke: ${theme.colors.grayscale.dark1};
+      stroke: ${theme.colorText};
       shape-rendering: crispEdges;
     }
     .parcoords canvas {

@@ -292,12 +292,12 @@ const thumbnailContainerCss = (theme: SupersetTheme) => css`
 
 const HighlightLabel = styled.div`
   ${({ theme }) => `
-    border: 1px solid ${theme.colors.primary.dark1};
+    border: 1px solid ${theme.colorPrimaryText};
     box-sizing: border-box;
     border-radius: ${theme.sizeUnit}px;
     background: ${theme.colors.grayscale.light5};
     line-height: ${theme.sizeUnit * 2.5}px;
-    color: ${theme.colors.primary.dark1};
+    color: ${theme.colorPrimaryText};
     font-size: ${theme.fontSizeSM}px;
     font-weight: ${theme.fontWeightStrong};
     text-align: center;

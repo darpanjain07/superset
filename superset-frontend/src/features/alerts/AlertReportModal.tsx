@@ -333,7 +333,7 @@ const StyledTooltip = styled(InfoTooltipWithTrigger)`
 // Notification Method components
 const StyledNotificationAddButton = styled.div`
   ${({ theme }) => css`
-    color: ${theme.colors.primary.dark1};
+    color: ${theme.colorPrimaryText};
     cursor: pointer;
 
     i {

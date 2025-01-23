@@ -50,7 +50,7 @@ export const RowLabel = styled.span`
 
 export const RowValue = styled.div`
   ${({ theme }) => css`
-    color: ${theme.colors.grayscale.dark1};
+    color: ${theme.colorText};
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;

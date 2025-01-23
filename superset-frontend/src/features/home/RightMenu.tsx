@@ -70,7 +70,7 @@ const versionInfoStyles = (theme: SupersetTheme) => css`
   white-space: nowrap;
 `;
 const StyledI = styled.div`
-  color: ${({ theme }) => theme.colors.primary.dark1};
+  color: ${({ theme }) => theme.colorPrimaryText};
 `;
 
 const styledDisabled = (theme: SupersetTheme) => css`

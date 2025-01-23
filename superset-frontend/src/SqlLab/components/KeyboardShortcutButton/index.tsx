@@ -87,7 +87,7 @@ const ShortcutWrapper = styled.div`
 
 const ShortcutCode = styled.code`
   font-size: ${({ theme }) => theme.fontSizeSM}px;
-  color: ${({ theme }) => theme.colors.grayscale.dark1};
+  color: ${({ theme }) => theme.colorText};
   border-radius: ${({ theme }) => theme.borderRadius}px;
   padding: ${({ theme }) => `${theme.sizeUnit}px ${theme.sizeUnit * 2}px`};
 `;

@@ -48,7 +48,7 @@ const AddFilter = styled.div`
     cursor: pointer;
     color: ${theme.colorPrimary};
     &:hover {
-      color: ${theme.colors.primary.dark1};
+      color: ${theme.colorPrimaryText};
     }
   `}
 `;
@@ -59,7 +59,7 @@ const DeleteFilter = styled(Icons.Trash)`
     margin-left: ${theme.sizeUnit * 2}px;
     color: ${theme.colors.grayscale.base};
     &:hover {
-      color: ${theme.colors.grayscale.dark1};
+      color: ${theme.colorText};
     }
   `}
 `;

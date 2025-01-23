@@ -86,7 +86,7 @@ const TitleLink = styled.span`
   overflow: hidden;
   text-overflow: ellipsis;
   & a {
-    color: ${({ theme }) => theme.colors.grayscale.dark1} !important;
+    color: ${({ theme }) => theme.colorText} !important;
   }
 `;
 

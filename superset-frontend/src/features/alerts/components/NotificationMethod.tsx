@@ -79,7 +79,7 @@ const StyledNotificationMethod = styled.div`
     }
 
     .ghost-button {
-      color: ${theme.colors.primary.dark1};
+      color: ${theme.colorPrimaryText};
       display: inline-flex;
       align-items: center;
       font-size: ${theme.fontSizeSM}px;

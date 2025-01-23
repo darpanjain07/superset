@@ -224,7 +224,7 @@ export const AddIconButton = styled.button`
   height: ${({ theme }) => theme.sizeUnit * 4}px;
   width: ${({ theme }) => theme.sizeUnit * 4}px;
   padding: 0;
-  background-color: ${({ theme }) => theme.colors.primary.dark1};
+  background-color: ${({ theme }) => theme.colorPrimaryText};
   border: none;
   border-radius: 2px;
 

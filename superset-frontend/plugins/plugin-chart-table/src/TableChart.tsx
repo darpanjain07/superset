@@ -982,7 +982,7 @@ export default function TableChart<D extends DataRecord = DataRecord>(
                   align-items: center;
                   & svg {
                     margin-left: ${theme.sizeUnit}px;
-                    color: ${theme.colors.grayscale.dark1} !important;
+                    color: ${theme.colorText} !important;
                   }
                 `}
               >

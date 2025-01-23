@@ -91,7 +91,7 @@ const BulkSelectWrapper = styled(Alert)`
   ${({ theme }) => `
     border-radius: 0;
     margin-bottom: 0;
-    color: ${theme.colors.grayscale.dark1};
+    color: ${theme.colorText};
     background-color: ${theme.colors.primary.bg};
 
     .selectedCopy {

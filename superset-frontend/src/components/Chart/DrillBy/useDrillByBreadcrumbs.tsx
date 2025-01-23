@@ -43,10 +43,10 @@ const BreadcrumbItem = styled(AntdBreadcrumb.Item)<{
     color: ${theme.colors.grayscale.light1};
     transition: color ease-in ${theme.motionDurationMid};
     .ant-breadcrumb > span:last-child > & {
-      color: ${theme.colors.grayscale.dark1};
+      color: ${theme.colorText};
     }
     &:hover {
-      color: ${isClickable ? theme.colors.grayscale.dark1 : 'inherit'};
+      color: ${isClickable ? theme.colorText : 'inherit'};
     }
     visibility: ${isHidden ? 'hidden' : 'visible'};
   `}

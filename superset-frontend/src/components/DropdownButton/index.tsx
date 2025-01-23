@@ -25,7 +25,7 @@ import { kebabCase } from 'lodash';
 const StyledDropdownButton = styled.div`
   .ant-btn-group {
     button.ant-btn {
-      background-color: ${({ theme }) => theme.colors.primary.dark1};
+      background-color: ${({ theme }) => theme.colorPrimaryText};
       border-color: transparent;
       color: ${({ theme }) => theme.colors.grayscale.light5};
       font-size: 12px;
