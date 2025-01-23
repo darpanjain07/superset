@@ -32,6 +32,7 @@ import { MenuObjectProps } from 'src/types/bootstrapTypes';
 const StyledHeader = styled.div`
   margin-bottom: ${({ theme }) => theme.sizeUnit * 4}px;
   .header {
+    background-color: ${({ theme }) => theme.colorBgElevated};
     font-weight: ${({ theme }) => theme.fontWeightStrong};
     margin-right: ${({ theme }) => theme.sizeUnit * 3}px;
     text-align: left;
@@ -68,7 +69,7 @@ const StyledHeader = styled.div`
     padding-left: 10px;
   }
   .menu {
-    background-color: ${({ theme }) => theme.colors.grayscale.light5};
+    background-color: ${({ theme }) => theme.colorBgElevated};
   }
 
   .menu > .antd5-menu {
