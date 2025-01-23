@@ -43,7 +43,7 @@ export default function BasicErrorAlert({
 }: BasicErrorAlertProps) {
   const theme = useTheme();
   const variants = themeObject.getColorVariants(level);
-  const style = {
+  const style: React.CSSProperties = {
     backgroundColor: variants.bg,
     borderColor: variants.border,
     color: variants.text,
