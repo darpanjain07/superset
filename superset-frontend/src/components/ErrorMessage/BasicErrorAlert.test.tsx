@@ -70,7 +70,7 @@ test('should render with warning theme', () => {
   render(<BasicErrorAlert {...mockedProps} />);
   expect(screen.getByRole('alert')).toHaveStyle(
     `
-      backgroundColor: ${supersetTheme.colorWarningBg};
+      color: ${supersetTheme.colorWarningText};
     `,
   );
 });
@@ -83,7 +83,7 @@ test('should render with error theme', () => {
   render(<BasicErrorAlert {...errorProps} />);
   expect(screen.getByRole('alert')).toHaveStyle(
     `
-      backgroundColor: ${supersetTheme.colorErrorBg};
+      color: ${supersetTheme.colorErrorText};
     `,
   );
 });
