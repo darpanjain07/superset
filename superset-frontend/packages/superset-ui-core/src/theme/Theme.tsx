@@ -517,6 +517,7 @@ export class Theme {
   }
 
   private static getAntdTokens(antdConfig: AntdThemeConfig): AntdTokens {
+    console.log('YOtheme', antdConfig);
     return antdThemeImport.getDesignToken(antdConfig);
   }
 
