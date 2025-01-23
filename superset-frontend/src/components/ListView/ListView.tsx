@@ -92,7 +92,7 @@ const BulkSelectWrapper = styled(Alert)`
     border-radius: 0;
     margin-bottom: 0;
     color: ${theme.colorText};
-    background-color: ${theme.colors.primary.bg};
+    background-color: ${theme.colorPrimaryBg};
 
     .selectedCopy {
       display: inline-block;

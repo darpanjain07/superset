@@ -66,7 +66,7 @@ export const SQLPopover = (props: PopoverProps & { sqlExpression: string }) => {
           wrapEnabled
           style={{
             border: `1px solid ${theme.colors.grayscale.light2}`,
-            background: theme.colors.primary.bg,
+            background: theme.colorPrimaryBg,
             maxWidth: theme.sizeUnit * 100,
           }}
         />

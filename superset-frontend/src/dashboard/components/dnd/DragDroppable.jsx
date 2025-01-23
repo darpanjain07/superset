@@ -112,7 +112,7 @@ const DragDroppableStyles = styled.div`
         width: 100%;
         height: 100%;
         &.drop-indicator--forbidden {
-          background-color: ${theme.colors.error.bg};
+          background-color: ${theme.colorErrorBg};
         }
       }
     }

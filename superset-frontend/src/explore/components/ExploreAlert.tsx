@@ -59,7 +59,7 @@ const AlertContainer = styled.div`
 
     &.alert-type-warning {
       border-color: ${theme.colors.error.border};
-      background-color: ${theme.colors.error.bg};
+      background-color: ${theme.colorErrorBg};
 
       p {
         color: ${theme.colorErrorText};
